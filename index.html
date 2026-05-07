@@ -1,0 +1,2082 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#1a0f0d" />
+<meta name="color-scheme" content="dark" />
+
+<title>אייל הקצב · הוד השרון — אהבה לבשר</title>
+<meta name="description" content="אייל הקצב, קצביית בוטיק בהוד השרון. נתחי בשר טריים, איכות בלתי מתפשרת, יחס אישי וניסיון של דורות. אהבה לבשר — בכל נתח." />
+<meta name="keywords" content="אייל הקצב, קצביה הוד השרון, אטליז הוד השרון, בשר טרי, נתחי בוטיק, אנטריקוט, פילה, סטייקים, המבורגר ביתי, צלי, טלה, עוף טרי, קצב בוטיק" />
+<meta name="author" content="אייל הקצב" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://eyalhakatzav.co.il/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="he_IL" />
+<meta property="og:site_name" content="אייל הקצב — הוד השרון" />
+<meta property="og:title" content="אייל הקצב · אהבה לבשר" />
+<meta property="og:description" content="קצביית בוטיק בהוד השרון. נתחים טריים, יחס אישי, איכות שמרגישים." />
+<meta property="og:url" content="https://eyalhakatzav.co.il/" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="אייל הקצב · אהבה לבשר" />
+<meta name="twitter:description" content="קצביית בוטיק בהוד השרון — איכות בלתי מתפשרת." />
+
+<!-- Schema.org / SEO LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Butcher",
+  "name": "אייל הקצב",
+  "alternateName": "Eyal HaKatzav",
+  "description": "קצביית בוטיק בהוד השרון. נתחי בשר טריים, איכות בלתי מתפשרת ויחס אישי.",
+  "image": "https://eyalhakatzav.co.il/og.jpg",
+  "telephone": "+972-54-679-4588",
+  "url": "https://eyalhakatzav.co.il/",
+  "priceRange": "₪₪",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ששת הימים 50",
+    "addressLocality": "הוד השרון",
+    "addressCountry": "IL"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens": "08:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Friday"],"opens": "07:30","closes": "15:00"}
+  ],
+  "sameAs": [
+    "https://www.instagram.com/eyal_aloni/"
+  ]
+}
+</script>
+
+<!-- Fonts: Frank Ruhl Libre (display Hebrew serif) + Heebo (body) + Bellefair (Latin flourish) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;800;900&family=Heebo:wght@300;400;500;700;800&family=Bellefair&display=swap" rel="stylesheet" />
+
+<style>
+  /* =============== TOKENS =============== */
+  :root {
+    --bone:    #f3e7d0;   /* parchment cream */
+    --bone-2:  #e8d8b8;   /* aged paper */
+    --char:    #14100e;   /* coal */
+    --char-2:  #1f1814;   /* warm coal */
+    --char-3:  #2a2018;   /* smoke */
+    --blood:   #7a1010;   /* deep oxblood */
+    --blood-2: #a61f1f;   /* fresh */
+    --rust:    #c0411c;   /* smoked paprika */
+    --gold:    #c9a24a;   /* aged brass */
+    --gold-2:  #e2c277;   /* candle */
+    --sage:    #6b7355;
+    --line:    rgba(243,231,208,0.14);
+    --line-on-bone: rgba(20,16,14,0.18);
+
+    --serif: "Frank Ruhl Libre", "Times New Roman", serif;
+    --sans:  "Heebo", "Segoe UI", system-ui, sans-serif;
+    --latin: "Bellefair", "Times New Roman", serif;
+
+    --container: 1240px;
+    --pad: clamp(20px, 5vw, 56px);
+
+    --ease: cubic-bezier(.2,.7,.2,1);
+    --ease-back: cubic-bezier(.2,1.2,.4,1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--sans);
+    background: var(--char);
+    color: var(--bone);
+    line-height: 1.55;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+  /* Selection */
+  ::selection { background: var(--blood-2); color: var(--bone); }
+
+  /* Focus visible */
+  :focus { outline: none; }
+  :focus-visible {
+    outline: 2px solid var(--gold-2);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Skip link */
+  .skip {
+    position: fixed;
+    inset-block-start: 8px;
+    inset-inline-start: 8px;
+    z-index: 9999;
+    background: var(--bone);
+    color: var(--char);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    transform: translateY(-200%);
+    transition: transform .25s var(--ease);
+  }
+  .skip:focus { transform: translateY(0); }
+
+  /* Grain overlay */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: .35;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  /* =============== TYPOGRAPHY =============== */
+  .display {
+    font-family: var(--serif);
+    font-weight: 800;
+    line-height: .92;
+    letter-spacing: -0.01em;
+  }
+  .latin { font-family: var(--latin); letter-spacing: .12em; }
+  .eyebrow {
+    font-family: var(--latin);
+    font-size: 12px;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* =============== LAYOUT =============== */
+  .wrap {
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: var(--pad);
+  }
+
+  /* =============== NAV =============== */
+  .nav {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    z-index: 100;
+    transition: background .35s var(--ease), border-color .35s var(--ease), backdrop-filter .35s;
+    border-block-end: 1px solid transparent;
+  }
+  .nav.scrolled {
+    background: rgba(20,16,14,.78);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border-block-end-color: var(--line);
+  }
+  .nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 16px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--serif);
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -.01em;
+  }
+  .brand__mark {
+    width: 38px; height: 38px;
+    flex: 0 0 38px;
+    border-radius: 50%;
+    background: radial-gradient(120% 120% at 30% 30%, var(--blood-2) 0%, var(--blood) 55%, #4a0808 100%);
+    box-shadow: inset 0 0 0 1.5px var(--gold), 0 6px 18px rgba(122,16,16,.4);
+    display: grid;
+    place-items: center;
+    color: var(--gold-2);
+    font-family: var(--serif);
+    font-size: 18px;
+  }
+  .brand__name { display: flex; flex-direction: column; gap: 2px; }
+  .brand__name small {
+    font-family: var(--latin);
+    font-size: 9px;
+    letter-spacing: .35em;
+    color: var(--gold);
+    font-weight: 400;
+  }
+  .nav__links {
+    display: none;
+    gap: 28px;
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+  .nav__links a {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding-block: 6px;
+    color: var(--bone);
+    transition: color .25s var(--ease);
+  }
+  .nav__links a::after {
+    content: "";
+    position: absolute;
+    inset-block-end: 0; inset-inline: 50%;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: inset-inline .35s var(--ease), width .35s var(--ease);
+  }
+  .nav__links a:hover { color: var(--gold-2); }
+  .nav__links a:hover::after { inset-inline: 0; width: 100%; }
+
+  .nav__cta {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: var(--blood);
+    color: var(--bone);
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13px;
+    border: 1px solid rgba(226,194,119,.4);
+    transition: transform .25s var(--ease), background .25s, box-shadow .25s;
+    box-shadow: 0 6px 24px rgba(122,16,16,.4);
+  }
+  .nav__cta:hover { background: var(--blood-2); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(166,31,31,.5); }
+
+  .nav__menu {
+    display: grid; place-items: center;
+    width: 44px; height: 44px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(243,231,208,0.04);
+    transition: background .25s;
+  }
+  .nav__menu:hover { background: rgba(243,231,208,0.1); }
+  .nav__menu span {
+    position: relative;
+    width: 18px; height: 2px;
+    background: var(--bone);
+    border-radius: 2px;
+    transition: transform .35s var(--ease), background .35s;
+  }
+  .nav__menu span::before, .nav__menu span::after {
+    content: ""; position: absolute;
+    inset-inline-start: 0;
+    width: 18px; height: 2px;
+    background: var(--bone);
+    border-radius: 2px;
+    transition: transform .35s var(--ease), top .25s;
+  }
+  .nav__menu span::before { top: -6px; }
+  .nav__menu span::after  { top:  6px; }
+  body.menu-open .nav__menu span { background: transparent; }
+  body.menu-open .nav__menu span::before { top: 0; transform: rotate(45deg); }
+  body.menu-open .nav__menu span::after  { top: 0; transform: rotate(-45deg); }
+
+  @media (min-width: 960px) {
+    .nav__links { display: flex; }
+    .nav__cta { display: inline-flex; }
+    .nav__menu { display: none; }
+  }
+
+  /* Mobile drawer */
+  .drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 95;
+    background: linear-gradient(180deg, var(--char) 0%, var(--char-2) 100%);
+    padding: 100px var(--pad) 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transform: translateY(-100%);
+    transition: transform .55s var(--ease);
+    overflow-y: auto;
+  }
+  body.menu-open .drawer { transform: translateY(0); }
+  .drawer a {
+    font-family: var(--serif);
+    font-size: clamp(28px, 8vw, 44px);
+    font-weight: 800;
+    letter-spacing: -.01em;
+    padding-block: 14px;
+    border-block-end: 1px solid var(--line);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    transition: color .25s, padding-inline-start .35s var(--ease);
+  }
+  .drawer a:hover { color: var(--gold-2); padding-inline-start: 12px; }
+  .drawer a span {
+    font-family: var(--latin);
+    font-size: 11px;
+    letter-spacing: .3em;
+    color: var(--gold);
+  }
+  .drawer__foot {
+    margin-block-start: auto;
+    padding-block-start: 24px;
+    color: rgba(243,231,208,0.65);
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .drawer__foot strong { color: var(--gold-2); font-family: var(--latin); letter-spacing: .15em; }
+
+  /* =============== HERO =============== */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    padding: 120px var(--pad) 60px;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+      radial-gradient(120% 80% at 80% 10%, rgba(192,65,28,.18) 0%, transparent 55%),
+      radial-gradient(80% 60% at 10% 90%, rgba(122,16,16,.35) 0%, transparent 60%),
+      linear-gradient(180deg, #0e0a08 0%, #1a120e 60%, #2a1812 100%);
+  }
+  .hero::after {
+    /* vignette */
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(120% 80% at 50% 60%, transparent 40%, rgba(0,0,0,.6) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero__bg svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+  /* Floating chart elements */
+  .float {
+    position: absolute;
+    pointer-events: none;
+    opacity: .8;
+    will-change: transform;
+  }
+  .float--1 { top: 15%; right: -8%; width: 280px; opacity: .25; }
+  .float--2 { bottom: 18%; left: -6%; width: 220px; opacity: .18; }
+  .float--3 { top: 55%; right: 10%; width: 90px; opacity: .35; }
+  @media (min-width: 760px) {
+    .float--1 { right: 5%; width: 360px; opacity: .3; }
+    .float--2 { left: 6%; width: 300px; opacity: .22; }
+    .float--3 { right: 18%; width: 110px; }
+  }
+
+  .hero__inner {
+    position: relative;
+    z-index: 2;
+    max-width: var(--container);
+    margin-inline: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: calc(100svh - 180px);
+    gap: 30px;
+  }
+
+  .hero__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .hero__top .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: rgba(243,231,208,.06);
+    border: 1px solid var(--line);
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(243,231,208,.85);
+    backdrop-filter: blur(6px);
+  }
+  .pill__dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 4px rgba(74,222,128,.18);
+    animation: pulse 2.4s var(--ease) infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(74,222,128,.18); }
+    50%     { box-shadow: 0 0 0 8px rgba(74,222,128,.05); }
+  }
+  .hero__loc {
+    font-family: var(--latin);
+    font-size: 11px;
+    letter-spacing: .35em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .hero__center { align-self: center; }
+  .hero__title {
+    font-family: var(--serif);
+    font-weight: 900;
+    font-size: clamp(72px, 22vw, 280px);
+    line-height: .82;
+    letter-spacing: -0.02em;
+    color: var(--bone);
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+  .hero__title .word {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+  .hero__title .word > span {
+    display: inline-block;
+    transform: translateY(110%);
+    animation: rise 1.1s var(--ease-back) forwards;
+  }
+  .hero__title .word--2 > span { animation-delay: .12s; }
+  .hero__title .word--3 > span { animation-delay: .22s; color: var(--rust); font-style: italic; }
+  @keyframes rise { to { transform: translateY(0); } }
+
+  .hero__title .stroke {
+    -webkit-text-stroke: 1.5px var(--gold-2);
+    color: transparent;
+  }
+
+  .hero__sub {
+    text-align: center;
+    color: rgba(243,231,208,.78);
+    font-size: clamp(15px, 1.6vw, 19px);
+    max-width: 640px;
+    margin: 24px auto 0;
+    line-height: 1.65;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: fadeUp .9s .55s var(--ease) forwards;
+  }
+  @keyframes fadeUp { to { opacity: 1; transform: none; } }
+
+  .hero__ctas {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-block-start: 32px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: fadeUp .9s .75s var(--ease) forwards;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: transform .3s var(--ease), background .3s, box-shadow .3s, color .3s;
+    border: 1px solid transparent;
+    will-change: transform;
+  }
+  .btn--primary {
+    background: linear-gradient(180deg, var(--blood-2), var(--blood));
+    color: var(--bone);
+    border-color: rgba(226,194,119,.35);
+    box-shadow: 0 12px 30px rgba(122,16,16,.45), inset 0 1px 0 rgba(255,255,255,.08);
+  }
+  .btn--primary:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(166,31,31,.55), inset 0 1px 0 rgba(255,255,255,.1); }
+  .btn--ghost {
+    background: rgba(243,231,208,.05);
+    border-color: var(--line);
+    color: var(--bone);
+    backdrop-filter: blur(8px);
+  }
+  .btn--ghost:hover { background: rgba(243,231,208,.12); transform: translateY(-3px); }
+  .btn .arrow { transform: scaleX(-1); transition: transform .3s var(--ease); }
+  .btn:hover .arrow { transform: scaleX(-1) translateX(-4px); }
+
+  .hero__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+    color: rgba(243,231,208,.6);
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-family: var(--latin);
+  }
+  .hero__bottom strong { color: var(--gold-2); font-size: 32px; font-family: var(--serif); display: block; letter-spacing: -.02em; }
+  .hero__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    flex: 1;
+    max-width: 520px;
+  }
+  .hero__stats > div {
+    border-block-start: 1px solid var(--line);
+    padding-block-start: 12px;
+  }
+  .hero__scroll {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: .6;
+  }
+  .hero__scroll svg { animation: scrollHint 2.2s var(--ease) infinite; }
+  @keyframes scrollHint { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+  @media (min-width: 760px) { .hero__scroll { display: flex; } }
+
+  /* =============== MARQUEE =============== */
+  .marquee {
+    background: var(--bone);
+    color: var(--char);
+    border-block: 1px solid var(--line-on-bone);
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+  }
+  .marquee__track {
+    display: flex;
+    gap: 56px;
+    padding-block: 22px;
+    width: max-content;
+    animation: scroll 38s linear infinite;
+  }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(50%); } /* RTL: scrolls right */
+  }
+  .marquee__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    font-family: var(--serif);
+    font-weight: 800;
+    font-size: clamp(22px, 4vw, 38px);
+    letter-spacing: -.01em;
+    white-space: nowrap;
+  }
+  .marquee__item svg { color: var(--blood); flex: 0 0 auto; }
+  .marquee__item--alt { color: var(--blood); font-style: italic; }
+
+  /* =============== SECTION =============== */
+  section { position: relative; }
+  .section {
+    padding-block: clamp(80px, 12vw, 160px);
+    padding-inline: var(--pad);
+  }
+  .section__head {
+    display: grid;
+    gap: 18px;
+    margin-block-end: clamp(40px, 7vw, 80px);
+    max-width: 880px;
+  }
+  .section__title {
+    font-family: var(--serif);
+    font-weight: 800;
+    font-size: clamp(40px, 8vw, 88px);
+    line-height: .95;
+    letter-spacing: -.02em;
+    margin: 0;
+  }
+  .section__title em { font-style: italic; color: var(--blood-2); }
+  .section__lead {
+    font-size: clamp(15px, 1.6vw, 18px);
+    color: rgba(243,231,208,.75);
+    line-height: 1.7;
+    max-width: 620px;
+  }
+  .section--bone {
+    background: var(--bone);
+    color: var(--char);
+  }
+  .section--bone .section__lead { color: rgba(20,16,14,.75); }
+  .section--bone .section__title em { color: var(--blood); }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+  .reveal.in  { opacity: 1; transform: none; }
+  .reveal.delay-1 { transition-delay: .1s; }
+  .reveal.delay-2 { transition-delay: .2s; }
+  .reveal.delay-3 { transition-delay: .3s; }
+  .reveal.delay-4 { transition-delay: .4s; }
+
+  /* =============== ABOUT =============== */
+  .about {
+    background:
+      radial-gradient(60% 50% at 100% 0%, rgba(192,65,28,.1), transparent 60%),
+      var(--char);
+  }
+  .about__grid {
+    display: grid;
+    gap: clamp(32px, 5vw, 72px);
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  @media (min-width: 880px) {
+    .about__grid { grid-template-columns: 1.1fr 1fr; }
+  }
+  .about__text p {
+    font-size: clamp(15px, 1.55vw, 18px);
+    line-height: 1.85;
+    color: rgba(243,231,208,.85);
+    margin-block: 0 22px;
+  }
+  .about__text p strong { color: var(--gold-2); font-weight: 500; }
+  .quote {
+    margin-block-start: 36px;
+    padding: 28px 32px;
+    border-inline-start: 3px solid var(--blood-2);
+    background: rgba(243,231,208,.03);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.4;
+    color: var(--bone);
+    border-radius: 0 8px 8px 0;
+    position: relative;
+  }
+  .quote cite {
+    display: block;
+    margin-block-start: 14px;
+    font-style: normal;
+    font-family: var(--latin);
+    font-size: 12px;
+    letter-spacing: .3em;
+    color: var(--gold);
+  }
+
+  /* About card stack — vintage butcher chart */
+  .chart {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: var(--bone);
+    color: var(--char);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+      0 30px 80px rgba(0,0,0,.5),
+      inset 0 0 0 1px rgba(20,16,14,.1),
+      inset 0 0 100px rgba(192,65,28,.05);
+    transform: rotate(-1.5deg);
+    transition: transform .8s var(--ease);
+  }
+  .chart:hover { transform: rotate(0); }
+  .chart::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(20,16,14,.04) 0 1px, transparent 1px 32px),
+      repeating-linear-gradient(90deg, rgba(20,16,14,.04) 0 1px, transparent 1px 32px);
+    pointer-events: none;
+  }
+  .chart__head {
+    padding: 22px 26px 14px;
+    border-block-end: 1px solid rgba(20,16,14,.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .chart__head h4 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .chart__head small {
+    font-family: var(--latin);
+    letter-spacing: .25em;
+    font-size: 10px;
+    color: var(--blood);
+  }
+  .chart__diagram {
+    display: grid;
+    place-items: center;
+    padding: 8px 18px 18px;
+  }
+  .chart__diagram svg { width: 92%; height: auto; }
+  .chart__foot {
+    position: absolute;
+    inset-block-end: 0; inset-inline: 0;
+    padding: 14px 22px;
+    background: var(--char);
+    color: var(--bone);
+    display: flex; justify-content: space-between;
+    font-family: var(--latin);
+    letter-spacing: .25em;
+    font-size: 10px;
+  }
+  .chart__foot span:nth-child(2) { color: var(--gold-2); }
+  .chart__stamp {
+    position: absolute;
+    top: 18px; left: 18px;
+    width: 86px; height: 86px;
+    border: 2px solid var(--blood);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    text-align: center;
+    color: var(--blood);
+    font-family: var(--serif);
+    font-weight: 800;
+    transform: rotate(-12deg);
+    opacity: .8;
+  }
+  .chart__stamp span {
+    font-size: 10px;
+    letter-spacing: .15em;
+    line-height: 1.05;
+  }
+  .chart__stamp strong { font-size: 22px; display: block; }
+
+  /* =============== CUTS =============== */
+  .cuts {
+    background:
+      linear-gradient(180deg, var(--char) 0%, #100c0a 100%);
+  }
+  .cuts__head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-block-end: 50px;
+  }
+  .cuts__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  @media (min-width: 700px)  { .cuts__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1000px) { .cuts__grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .cut {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: linear-gradient(160deg, #261913 0%, #14100e 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    transition: transform .5s var(--ease), border-color .35s, box-shadow .5s;
+    isolation: isolate;
+    will-change: transform;
+  }
+  .cut:hover {
+    transform: translateY(-6px);
+    border-color: rgba(201,162,74,.35);
+    box-shadow: 0 24px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(201,162,74,.2);
+  }
+  .cut__art {
+    position: absolute;
+    inset-block-start: 0; inset-inline: 0;
+    aspect-ratio: 1.2;
+    display: grid; place-items: center;
+    background: radial-gradient(80% 80% at 50% 30%, rgba(192,65,28,.18), transparent 70%);
+    transition: transform .8s var(--ease);
+  }
+  .cut:hover .cut__art { transform: scale(1.05) rotate(-2deg); }
+  .cut__art svg { width: 65%; height: auto; filter: drop-shadow(0 18px 28px rgba(0,0,0,.55)); }
+
+  .cut__body {
+    position: absolute;
+    inset-block-end: 0; inset-inline: 0;
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 2;
+  }
+  .cut__num {
+    font-family: var(--latin);
+    font-size: 11px;
+    letter-spacing: .3em;
+    color: var(--gold);
+  }
+  .cut__name {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: -.01em;
+  }
+  .cut__desc {
+    color: rgba(243,231,208,.65);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .cut__tag {
+    position: absolute;
+    top: 16px; right: 16px;
+    padding: 5px 11px;
+    border-radius: 999px;
+    background: var(--blood);
+    color: var(--bone);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    border: 1px solid rgba(226,194,119,.35);
+  }
+  .cut__tag--gold { background: var(--gold); color: var(--char); border-color: transparent; }
+
+  /* =============== PROCESS =============== */
+  .process {
+    background: var(--bone);
+    color: var(--char);
+    overflow: hidden;
+  }
+  .process .section__title em { color: var(--blood); }
+  .process__steps {
+    display: grid;
+    gap: 0;
+    margin-block-start: 30px;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(18px, 4vw, 40px);
+    padding-block: clamp(28px, 5vw, 48px);
+    border-block-start: 1px solid var(--line-on-bone);
+    align-items: start;
+    position: relative;
+  }
+  .step:last-child { border-block-end: 1px solid var(--line-on-bone); }
+  .step:hover { background: rgba(20,16,14,.03); }
+  .step__num {
+    font-family: var(--latin);
+    font-size: clamp(36px, 8vw, 80px);
+    color: var(--blood);
+    line-height: .9;
+    font-weight: 400;
+    min-width: clamp(60px, 10vw, 130px);
+    transition: transform .5s var(--ease);
+  }
+  .step:hover .step__num { transform: translateX(-8px); }
+  .step__body { display: grid; gap: 8px; max-width: 720px; }
+  .step__body h3 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 800;
+    letter-spacing: -.01em;
+  }
+  .step__body p {
+    margin: 0;
+    color: rgba(20,16,14,.7);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* =============== WHY =============== */
+  .why {
+    background:
+      radial-gradient(50% 60% at 0% 100%, rgba(122,16,16,.25) 0%, transparent 60%),
+      linear-gradient(180deg, #100c0a 0%, var(--char) 100%);
+  }
+  .why__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 700px)  { .why__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1000px) { .why__grid { grid-template-columns: repeat(4, 1fr); } }
+  .feat {
+    padding: 26px 24px 30px;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    background: rgba(243,231,208,.025);
+    backdrop-filter: blur(8px);
+    transition: transform .5s var(--ease), border-color .35s, background .35s;
+  }
+  .feat:hover {
+    transform: translateY(-6px);
+    border-color: rgba(201,162,74,.35);
+    background: rgba(243,231,208,.05);
+  }
+  .feat__icon {
+    width: 52px; height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(192,65,28,.2), rgba(122,16,16,.2));
+    display: grid; place-items: center;
+    margin-block-end: 18px;
+    color: var(--gold-2);
+    border: 1px solid rgba(226,194,119,.18);
+  }
+  .feat h4 {
+    margin: 0 0 10px;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+  }
+  .feat p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(243,231,208,.7);
+  }
+
+  /* =============== TESTIMONIALS =============== */
+  .testify {
+    background: var(--char-2);
+    overflow: hidden;
+  }
+  .testify__head { text-align: center; max-width: 720px; margin-inline: auto; }
+  .testify__head .section__title { text-align: center; }
+  .testify__rail {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 18px;
+  }
+  @media (max-width: 880px) {
+    .testify__rail {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-block-end: 14px;
+      margin-inline: calc(var(--pad) * -1);
+      padding-inline: var(--pad);
+      scrollbar-width: none;
+    }
+    .testify__rail::-webkit-scrollbar { display: none; }
+    .testimonial { min-width: 84%; scroll-snap-align: center; }
+  }
+  .testimonial {
+    padding: 28px 26px 30px;
+    background: linear-gradient(160deg, #2a1f17 0%, #1a130f 100%);
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    display: grid;
+    gap: 16px;
+    transition: transform .4s var(--ease);
+  }
+  .testimonial:hover { transform: translateY(-5px); }
+  .testimonial__stars { color: var(--gold-2); display: flex; gap: 2px; font-size: 16px; }
+  .testimonial__text {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--bone);
+    font-style: italic;
+  }
+  .testimonial__text::before { content: "״"; color: var(--blood-2); font-size: 28px; margin-inline-end: 4px; vertical-align: -8px; }
+  .testimonial__by {
+    display: flex; align-items: center; gap: 12px;
+    border-block-start: 1px solid var(--line);
+    padding-block-start: 14px;
+  }
+  .testimonial__avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--blood), var(--rust));
+    color: var(--bone);
+    font-family: var(--serif);
+    font-weight: 800;
+    font-size: 16px;
+    flex: 0 0 38px;
+  }
+  .testimonial__by strong {
+    display: block; font-weight: 700; font-size: 14px;
+  }
+  .testimonial__by small {
+    font-family: var(--latin);
+    font-size: 11px;
+    letter-spacing: .15em;
+    color: var(--gold);
+  }
+
+  /* =============== VISIT =============== */
+  .visit {
+    background:
+      linear-gradient(180deg, var(--char) 0%, #0a0706 100%);
+  }
+  .visit__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 880px) { .visit__grid { grid-template-columns: 1.2fr 1fr; gap: 36px; } }
+
+  .visit__card {
+    padding: clamp(28px, 5vw, 48px);
+    background: var(--bone);
+    color: var(--char);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .visit__card::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -40%; inset-inline-end: -20%;
+    width: 60%; aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(192,65,28,.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .visit__card h3 {
+    margin: 0 0 22px;
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -.01em;
+  }
+  .visit__rows { display: grid; gap: 22px; position: relative; }
+  .visit__row {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+    align-items: start;
+    padding-block-start: 18px;
+    border-block-start: 1px solid var(--line-on-bone);
+  }
+  .visit__row:first-child { border-block-start: 0; padding-block-start: 0; }
+  .visit__row strong {
+    display: block;
+    font-family: var(--latin);
+    letter-spacing: .25em;
+    font-size: 11px;
+    color: var(--blood);
+    margin-block-end: 4px;
+  }
+  .visit__row span { font-size: 16px; line-height: 1.55; }
+  .visit__row a { color: var(--char); border-block-end: 1px dashed rgba(20,16,14,.3); transition: color .25s, border-color .25s; }
+  .visit__row a:hover { color: var(--blood); border-color: var(--blood); }
+  .visit__icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: grid; place-items: center;
+    background: var(--char);
+    color: var(--gold-2);
+    flex: 0 0 36px;
+  }
+
+  .visit__map {
+    aspect-ratio: 4/5;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background:
+      radial-gradient(60% 80% at 30% 30%, #2c1f17 0%, transparent 70%),
+      linear-gradient(160deg, #1a120e 0%, #0a0706 100%);
+    border: 1px solid var(--line);
+  }
+  .visit__map::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(243,231,208,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(243,231,208,.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(80% 80% at 50% 50%, black, transparent 100%);
+    -webkit-mask-image: radial-gradient(80% 80% at 50% 50%, black, transparent 100%);
+  }
+  .visit__pin {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+  }
+  .visit__pin .pin {
+    width: 56px; height: 56px;
+    margin: 0 auto;
+    border-radius: 50% 50% 50% 0;
+    background: linear-gradient(135deg, var(--blood-2), var(--blood));
+    transform: rotate(-45deg);
+    box-shadow: 0 14px 30px rgba(122,16,16,.55), 0 0 0 8px rgba(166,31,31,.18);
+    position: relative;
+    animation: bob 3s var(--ease) infinite;
+  }
+  .visit__pin .pin::after {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border-radius: 50%;
+    background: var(--bone);
+  }
+  @keyframes bob { 0%,100% { transform: rotate(-45deg) translate(0,0); } 50% { transform: rotate(-45deg) translate(0,-6px); } }
+  .visit__pin span {
+    display: inline-block;
+    margin-block-start: 28px;
+    padding: 8px 16px;
+    background: rgba(20,16,14,.85);
+    backdrop-filter: blur(8px);
+    border-radius: 999px;
+    font-family: var(--latin);
+    letter-spacing: .25em;
+    font-size: 11px;
+    color: var(--gold-2);
+    border: 1px solid var(--line);
+    white-space: nowrap;
+  }
+  .visit__map a.maplink {
+    position: absolute;
+    inset-block-end: 18px;
+    inset-inline-end: 18px;
+    padding: 11px 18px;
+    background: var(--bone);
+    color: var(--char);
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    transition: transform .25s, background .25s;
+  }
+  .visit__map a.maplink:hover { transform: translateY(-2px); background: var(--gold-2); }
+
+  /* =============== FOOTER =============== */
+  .footer {
+    background: #060403;
+    color: rgba(243,231,208,.65);
+    padding-block: 60px 28px;
+    padding-inline: var(--pad);
+    border-block-start: 1px solid var(--line);
+  }
+  .footer__grid {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: 1fr;
+    margin-block-end: 36px;
+  }
+  @media (min-width: 760px) { .footer__grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+  .footer h5 {
+    font-family: var(--latin);
+    letter-spacing: .3em;
+    font-size: 11px;
+    color: var(--gold);
+    margin: 0 0 16px;
+  }
+  .footer__about {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--bone);
+  }
+  .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .footer ul a { transition: color .25s; }
+  .footer ul a:hover { color: var(--gold-2); }
+  .footer__bottom {
+    border-block-start: 1px solid var(--line);
+    padding-block-start: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: rgba(243,231,208,.45);
+  }
+  .footer__socials { display: flex; gap: 10px; }
+  .footer__socials a {
+    width: 38px; height: 38px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    display: grid; place-items: center;
+    transition: background .25s, border-color .25s, transform .25s;
+  }
+  .footer__socials a:hover { background: var(--blood); border-color: var(--blood-2); transform: translateY(-3px); color: var(--bone); }
+
+  /* =============== FLOATING WHATSAPP =============== */
+  .wa {
+    position: fixed;
+    inset-block-end: 22px;
+    inset-inline-start: 22px;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px 14px 14px;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: white;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 14px 40px rgba(18,140,126,.45), 0 0 0 4px rgba(37,211,102,.12);
+    transition: transform .35s var(--ease), box-shadow .35s, padding .35s;
+  }
+  .wa:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 18px 50px rgba(18,140,126,.6); }
+  .wa__icon {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: white;
+    display: grid; place-items: center;
+    color: #25d366;
+    flex: 0 0 38px;
+    position: relative;
+  }
+  .wa__icon::after {
+    content: "";
+    position: absolute; inset: -4px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.5);
+    animation: ringPulse 2.6s var(--ease) infinite;
+  }
+  @keyframes ringPulse {
+    0% { transform: scale(.8); opacity: .9; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  .wa__label {
+    font-size: 14px;
+    line-height: 1.2;
+    display: none;
+  }
+  .wa__label small {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    opacity: .9;
+  }
+  @media (min-width: 480px) { .wa__label { display: block; } }
+
+  /* =============== UTILITIES =============== */
+  .center { text-align: center; }
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">דלג לתוכן</a>
+
+<!-- ============== NAV ============== -->
+<header class="nav" id="nav" role="banner">
+  <div class="wrap nav__inner">
+    <a href="#" class="brand" aria-label="אייל הקצב — דף הבית">
+      <span class="brand__mark" aria-hidden="true">א</span>
+      <span class="brand__name">
+        <span>אייל הקצב</span>
+        <small>EYAL · HOD HASHARON</small>
+      </span>
+    </a>
+    <nav aria-label="ראשי">
+      <ul class="nav__links">
+        <li><a href="#about">הסיפור</a></li>
+        <li><a href="#cuts">הנתחים</a></li>
+        <li><a href="#process">התהליך</a></li>
+        <li><a href="#why">למה אנחנו</a></li>
+        <li><a href="#visit">בקרו אותנו</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+972546794588" class="nav__cta" aria-label="להזמנה טלפונית">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      הזמנה טלפונית
+    </a>
+    <button class="nav__menu" id="menuBtn" aria-label="תפריט" aria-controls="drawer" aria-expanded="false">
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============== DRAWER ============== -->
+<nav class="drawer" id="drawer" aria-label="ניווט נייד" aria-hidden="true">
+  <a href="#about"><span>01</span>הסיפור</a>
+  <a href="#cuts"><span>02</span>הנתחים</a>
+  <a href="#process"><span>03</span>התהליך</a>
+  <a href="#why"><span>04</span>למה אנחנו</a>
+  <a href="#visit"><span>05</span>בקרו אותנו</a>
+  <div class="drawer__foot">
+    <strong>EYAL HAKATZAV · 1985</strong>
+    <span>ששת הימים 50, הוד השרון</span>
+    <span dir="ltr">054-679-4588</span>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ============== HERO ============== -->
+<section class="hero" aria-label="ברוכים הבאים">
+  <!-- Layered SVG background -->
+  <div class="hero__bg" aria-hidden="true">
+    <!-- Butcher chart silhouette layer 1 -->
+    <svg class="float float--1" viewBox="0 0 200 240" fill="none" stroke="currentColor" stroke-width=".6" data-parallax="-40">
+      <g style="color: rgba(226,194,119,.5)">
+        <!-- abstract cow outline -->
+        <path d="M30 80 Q40 40 90 40 L130 40 Q160 30 175 60 Q190 70 185 95 L180 120 L195 130 L185 155 L165 160 L160 195 L140 200 L135 215 L120 215 L120 198 L80 198 L80 215 L65 215 L60 200 L40 195 L35 160 L25 150 L25 120 L18 110 L25 95 Z" />
+        <path d="M60 80 L60 195 M90 80 L90 195 M120 80 L120 195 M150 80 L150 195" stroke-dasharray="2 4"/>
+        <text x="68" y="105" font-family="Bellefair" font-size="9">CHUCK</text>
+        <text x="98" y="125" font-family="Bellefair" font-size="9">RIB</text>
+        <text x="125" y="135" font-family="Bellefair" font-size="9">LOIN</text>
+        <text x="155" y="125" font-family="Bellefair" font-size="9">ROUND</text>
+      </g>
+    </svg>
+
+    <!-- Cleaver -->
+    <svg class="float float--2" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1" data-parallax="60">
+      <g style="color: rgba(243,231,208,.45)">
+        <rect x="20" y="30" width="120" height="80" rx="4" />
+        <circle cx="40" cy="50" r="3" />
+        <rect x="135" y="55" width="50" height="30" rx="3" />
+        <line x1="20" y1="40" x2="140" y2="40" />
+        <line x1="20" y1="100" x2="140" y2="100" />
+      </g>
+    </svg>
+
+    <!-- Stamp -->
+    <svg class="float float--3" viewBox="0 0 100 100" fill="none" data-parallax="-20">
+      <g style="color: rgba(192,65,28,.7); transform: rotate(-15deg); transform-origin: 50% 50%;">
+        <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width=".8"/>
+        <text x="50" y="45" text-anchor="middle" fill="currentColor" font-family="Frank Ruhl Libre" font-size="14" font-weight="800">PRIME</text>
+        <text x="50" y="62" text-anchor="middle" fill="currentColor" font-family="Bellefair" font-size="6" letter-spacing="1">EST · 1985</text>
+        <path d="M20 70 L80 70" stroke="currentColor" stroke-width=".5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero__inner">
+
+    <div class="hero__top reveal">
+      <span class="pill">
+        <span class="pill__dot" aria-hidden="true"></span>
+        פתוחים עכשיו · הבשר הטרי של היום
+      </span>
+      <span class="hero__loc">EST · 1985 · HOD HASHARON</span>
+    </div>
+
+    <div class="hero__center">
+      <h1 class="hero__title" aria-label="אהבה לבשר">
+        <span class="word word--1"><span>אהבה</span></span>
+        <br/>
+        <span class="word word--2"><span class="stroke">ל</span></span><span class="word word--3"><span>בשר</span></span>
+      </h1>
+      <p class="hero__sub">
+        קצביית בוטיק בלב הוד השרון. שלושה דורות של ידיים שיודעות בשר —
+        <strong style="color:var(--gold-2);font-weight:500;">סכין חדה, חיתוך מדויק, וכבוד עמוק לחומר.</strong>
+      </p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary" href="https://wa.me/972546794588" target="_blank" rel="noopener">
+          להזמנה מיידית
+          <svg class="arrow" width="18" height="14" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 L23 9 L16 16 M23 9 L1 9"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#cuts">
+          לתפריט הנתחים
+          <svg class="arrow" width="18" height="14" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 L23 9 L16 16 M23 9 L1 9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__bottom reveal delay-2">
+      <div class="hero__stats">
+        <div>
+          <strong>40+</strong>
+          <span>שנים על הבלוק</span>
+        </div>
+        <div>
+          <strong>180</strong>
+          <span>נתחים זמינים</span>
+        </div>
+        <div>
+          <strong>0</strong>
+          <span>פשרות באיכות</span>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="latin" style="font-size:10px;letter-spacing:.3em;color:var(--gold)">SCROLL</span>
+        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="1" y="1" width="12" height="20" rx="6"/>
+          <line x1="7" y1="6" x2="7" y2="11"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== MARQUEE ============== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">טריות מהיום</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </span>
+    <span class="marquee__item marquee__item--alt">חיתוך אישי</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 L18 4 L18 14 L12 20 L6 14 Z"/></svg>
+    </span>
+    <span class="marquee__item">דורות של ניסיון</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </span>
+    <span class="marquee__item marquee__item--alt">איכות פרימיום</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L14 9 L21 9 L15 13 L17 21 L12 16 L7 21 L9 13 L3 9 L10 9 Z"/></svg>
+    </span>
+    <span class="marquee__item">משלוחים בו ביום</span>
+
+    <!-- duplicate for seamless loop -->
+    <span class="marquee__item">טריות מהיום</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </span>
+    <span class="marquee__item marquee__item--alt">חיתוך אישי</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 L18 4 L18 14 L12 20 L6 14 Z"/></svg>
+    </span>
+    <span class="marquee__item">דורות של ניסיון</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </span>
+    <span class="marquee__item marquee__item--alt">איכות פרימיום</span>
+    <span class="marquee__item" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L14 9 L21 9 L15 13 L17 21 L12 16 L7 21 L9 13 L3 9 L10 9 Z"/></svg>
+    </span>
+    <span class="marquee__item">משלוחים בו ביום</span>
+  </div>
+</div>
+
+<!-- ============== ABOUT ============== -->
+<section class="section about" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="eyebrow">001 · הסיפור שלנו</span>
+      <h2 class="section__title" id="about-h">לא קצביה. <em>בית מלאכה.</em></h2>
+      <p class="section__lead">
+        אצל אייל לא נכנסים סתם לקנות בשר. נכנסים לדבר, לטעום, לשאול. כל נתח עובר תחת היד —
+        בלי שורטקטים, בלי קומפרומיסים, רק בשר אמיתי שיודע מאיפה הוא בא.
+      </p>
+    </header>
+
+    <div class="about__grid">
+      <div class="about__text">
+        <p class="reveal">
+          הכל התחיל בחנות קטנה ברחוב צדדי. אבא של אייל שחט, סיכך ולימד —
+          ואייל גדל בין הקצבים, עם ריח מלח ועצים שרופים על הידיים. <strong>היום, ארבעים שנה אחר כך,</strong>
+          זה אותו בלוק עץ, אותו מבט מקצועי, אבל עם תהליך מודרני שמכבד את החומר כמו פעם.
+        </p>
+        <p class="reveal delay-1">
+          אנחנו בוחרים בקפידה כל ספק, מבקרים את העדרים, מבקשים נתחים שלמים ולא חתוכים מראש.
+          זה סיפור של שליטה — מההגעה למשטח, דרך ההשרייה, ועד שהנתח עוטף בנייר מסביב לאצבע
+          הלקוח שאומר תודה.
+        </p>
+        <blockquote class="quote reveal delay-2">
+          הבשר הוא לא מוצר. הוא דיאלוג בין מי שגידל, מי שחתך, ומי שמבשל. תפקידי לוודא שאף אחד מהקולות לא ייעלם.
+          <cite>— אייל אלוני, בעלים</cite>
+        </blockquote>
+      </div>
+
+      <!-- Vintage butcher chart card -->
+      <aside class="chart reveal delay-3" aria-label="תרשים נתחים">
+        <div class="chart__head">
+          <h4>תרשים החנות</h4>
+          <small>ANATOMY · CHART</small>
+        </div>
+        <div class="chart__diagram">
+          <svg viewBox="0 0 280 320" fill="none" stroke="currentColor" stroke-width="1.4">
+            <g style="color:#1a120e">
+              <!-- stylized cow chart -->
+              <path d="M40 90 Q60 40 130 40 L195 40 Q235 30 250 70 Q265 80 258 110 L250 145 L268 158 L255 195 L228 200 L220 250 L195 260 L188 290 L165 290 L165 268 L100 268 L100 290 L78 290 L70 270 L42 260 L36 200 L22 188 L22 145 L12 130 L22 105 Z"/>
+              <path d="M75 90 L75 268 M115 75 L115 268 M165 60 L165 268 M215 75 L215 268" stroke-dasharray="3 5" stroke-width=".9"/>
+              <!-- numbered cuts -->
+              <g font-family="Frank Ruhl Libre" font-weight="800" font-size="14" fill="currentColor" stroke="none">
+                <text x="50" y="120">צוואר</text>
+                <text x="84" y="135">כתף</text>
+                <text x="125" y="155">צלעות</text>
+                <text x="172" y="170">סינטה</text>
+                <text x="220" y="160">ירך</text>
+                <text x="105" y="225">חזה</text>
+                <text x="155" y="245">בטן</text>
+              </g>
+              <g font-family="Bellefair" font-size="9" fill="#7a1010" stroke="none">
+                <text x="50" y="135">01</text>
+                <text x="86" y="150">02</text>
+                <text x="125" y="170">03</text>
+                <text x="172" y="185">04</text>
+                <text x="220" y="175">05</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="chart__stamp" aria-hidden="true">
+          <span><strong>40</strong>YEARS<br/>EST 1985</span>
+        </div>
+        <div class="chart__foot">
+          <span>EYAL · HAKATZAV</span>
+          <span>HOD HASHARON</span>
+          <span>VOL · 01</span>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== CUTS ============== -->
+<section class="section cuts" id="cuts" aria-labelledby="cuts-h">
+  <div class="wrap">
+    <header class="cuts__head reveal">
+      <div>
+        <span class="eyebrow">002 · הנתחים</span>
+        <h2 class="section__title" id="cuts-h">המבחר שלנו, <em>היום בחנות.</em></h2>
+      </div>
+      <p class="section__lead">
+        כל פריט נחתך לפי הזמנה. ספרו לנו איך אתם מתכננים לבשל ונתאים את הנתח —
+        סטייק עבה, צלי שלם, או בייגלך ארוז יפה לסטיר־פריי.
+      </p>
+    </header>
+
+    <div class="cuts__grid">
+
+      <article class="cut reveal">
+        <span class="cut__tag cut__tag--gold">פרימיום</span>
+        <div class="cut__art" aria-hidden="true">
+          <!-- ribeye -->
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <radialGradient id="g1" cx="40%" cy="40%">
+                <stop offset="0%" stop-color="#d24a3a"/>
+                <stop offset="60%" stop-color="#8a1414"/>
+                <stop offset="100%" stop-color="#3a0808"/>
+              </radialGradient>
+            </defs>
+            <path d="M100 30 Q150 35 170 75 Q180 115 155 155 Q120 178 80 170 Q40 160 30 120 Q28 75 60 50 Q80 32 100 30 Z" fill="url(#g1)" stroke="#3a0808" stroke-width="2"/>
+            <!-- marbling -->
+            <path d="M70 80 Q90 75 110 90 M65 110 Q95 100 130 115 M80 140 Q105 130 145 140" stroke="#f3e7d0" stroke-width="2" fill="none" opacity=".55" stroke-linecap="round"/>
+            <ellipse cx="120" cy="100" rx="22" ry="14" fill="#f3e7d0" opacity=".25"/>
+          </svg>
+        </div>
+        <div class="cut__body">
+          <span class="cut__num">CUT 01</span>
+          <h3 class="cut__name">אנטריקוט מיושן</h3>
+          <p class="cut__desc">21 יום של יישון יבש על העצם. שיש מושלם, טעם עמוק. לסטייק על האש.</p>
+        </div>
+      </article>
+
+      <article class="cut reveal delay-1">
+        <span class="cut__tag">חדש</span>
+        <div class="cut__art" aria-hidden="true">
+          <!-- filet -->
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <radialGradient id="g2" cx="50%" cy="40%">
+                <stop offset="0%" stop-color="#c8392a"/>
+                <stop offset="100%" stop-color="#5a0a0a"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="100" cy="100" rx="55" ry="68" fill="url(#g2)" stroke="#3a0808" stroke-width="2"/>
+            <ellipse cx="100" cy="100" rx="40" ry="52" fill="none" stroke="#f3e7d0" stroke-width="1.5" opacity=".3"/>
+            <path d="M85 75 Q105 90 110 130" stroke="#f3e7d0" stroke-width="2" fill="none" opacity=".4"/>
+          </svg>
+        </div>
+        <div class="cut__body">
+          <span class="cut__num">CUT 02</span>
+          <h3 class="cut__name">פילה בקר</h3>
+          <p class="cut__desc">הנתח הרך ביותר. מנקים בעצמנו, חוצים לפי בקשה. למסעדה ביתית של פעם.</p>
+        </div>
+      </article>
+
+      <article class="cut reveal delay-2">
+        <div class="cut__art" aria-hidden="true">
+          <!-- t-bone -->
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#a8261c"/>
+                <stop offset="100%" stop-color="#5a0a0a"/>
+              </linearGradient>
+            </defs>
+            <path d="M40 60 Q60 30 110 35 Q165 30 175 65 Q185 110 165 145 Q145 175 100 175 Q55 175 35 145 Q25 110 40 60 Z" fill="url(#g3)" stroke="#3a0808" stroke-width="2"/>
+            <!-- T-bone -->
+            <path d="M100 70 L100 130 M70 100 L130 100" stroke="#f3e7d0" stroke-width="9" stroke-linecap="round"/>
+            <path d="M70 100 L130 100" stroke="#e8d8b8" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="cut__body">
+          <span class="cut__num">CUT 03</span>
+          <h3 class="cut__name">טי־בון על העצם</h3>
+          <p class="cut__desc">סטייק וסינטה על אותה עצם. שני עולמות במנה אחת — דרמה על הגריל.</p>
+        </div>
+      </article>
+
+      <article class="cut reveal">
+        <span class="cut__tag">מומלץ</span>
+        <div class="cut__art" aria-hidden="true">
+          <!-- lamb chops -->
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <radialGradient id="g4" cx="50%" cy="40%">
+                <stop offset="0%" stop-color="#b83727"/>
+                <stop offset="100%" stop-color="#4a0808"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="100" cy="115" rx="60" ry="50" fill="url(#g4)" stroke="#3a0808" stroke-width="2"/>
+            <line x1="100" y1="95" x2="100" y2="35" stroke="#f3e7d0" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="100" cy="35" r="8" fill="#f3e7d0"/>
+            <path d="M75 110 Q95 115 125 105" stroke="#f3e7d0" stroke-width="1.5" fill="none" opacity=".4"/>
+          </svg>
+        </div>
+        <div class="cut__body">
+          <span class="cut__num">CUT 04</span>
+          <h3 class="cut__name">צלעות טלה</h3>
+          <p class="cut__desc">כתף טלה צעיר, ניקוי צרפתי קלאסי. מעודנות, ריחנית, חגיגית.</p>
+        </div>
+      </article>
+
+      <article class="cut reveal delay-1">
+        <div class="cut__art" aria-hidden="true">
+          <!-- chicken -->
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <radialGradient id="g5" cx="50%" cy="40%">
+                <stop offset="0%" stop-color="#f0c275"/>
+                <stop offset="100%" stop-color="#9a6020"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="100" cy="110" rx="65" ry="55" fill="url(#g5)" stroke="#5a3010" stroke-width="2"/>
+            <path d="M70 90 Q100 105 135 90 M70 130 Q100 140 135 125" stroke="#5a3010" stroke-width="1.2" fill="none" opacity=".4"/>
+            <circle cx="80" cy="95" r="3" fill="#5a3010" opacity=".35"/>
+            <circle cx="125" cy="125" r="2" fill="#5a3010" opacity=".35"/>
+          </svg>
+        </div>
+        <div class="cut__body">
+          <span class="cut__num">CUT 05</span>
+          <h3 class="cut__name">עוף חופש טרי</h3>
+          <p class="cut__desc">מהמשק לחנות תוך 24 שעות. שלם, מנוקה, או חתוך לפי דרישה.</p>
+        </div>
+      </article>
+
+      <article class="cut reveal delay-2">
+        <span class="cut__tag cut__tag--gold">בוטיק</span>
+        <div class="cut__art" aria-hidden="true">
+          <!-- sausage / kebab -->
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#b03020"/>
+                <stop offset="100%" stop-color="#5a1010"/>
+              </linearGradient>
+            </defs>
+            <rect x="35" y="80" width="130" height="40" rx="20" fill="url(#g6)" stroke="#3a0808" stroke-width="2"/>
+            <line x1="55" y1="85" x2="55" y2="115" stroke="#3a0808" stroke-width="2"/>
+            <line x1="100" y1="85" x2="100" y2="115" stroke="#3a0808" stroke-width="2"/>
+            <line x1="145" y1="85" x2="145" y2="115" stroke="#3a0808" stroke-width="2"/>
+            <line x1="20" y1="100" x2="35" y2="100" stroke="#a08060" stroke-width="3"/>
+            <line x1="165" y1="100" x2="180" y2="100" stroke="#a08060" stroke-width="3"/>
+            <path d="M55 95 Q70 100 90 95 M105 100 Q120 105 140 95" stroke="#f3e7d0" stroke-width="1.5" fill="none" opacity=".35"/>
+          </svg>
+        </div>
+        <div class="cut__body">
+          <span class="cut__num">CUT 06</span>
+          <h3 class="cut__name">קבב הבית</h3>
+          <p class="cut__desc">תערובת סודית, טחון פעמיים, תיבול ידני. בלי חומרי שימור — רק בשר ויד.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROCESS ============== -->
+<section class="section process" id="process" aria-labelledby="process-h">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="eyebrow" style="color:var(--blood)">003 · התהליך</span>
+      <h2 class="section__title" id="process-h">מהשטח <em>אל הצלחת.</em></h2>
+      <p class="section__lead">
+        ארבעה צעדים, אפס פשרות. ככה נתח מגיע אליכם הביתה — לא רק במכירה, אלא במחשבה.
+      </p>
+    </header>
+
+    <div class="process__steps">
+
+      <article class="step reveal">
+        <span class="step__num">01</span>
+        <div class="step__body">
+          <h3>מקור ידוע, ספק מוכר</h3>
+          <p>אנחנו עובדים עם משקים שבחרנו אישית — מבקרים, שואלים, ובודקים שהבעלי חיים גדלים נכון. אם לא נסכים על איכות, לא נסכים על עסקה.</p>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <span class="step__num">02</span>
+        <div class="step__body">
+          <h3>יישון בשליטה</h3>
+          <p>חדר יישון בטמפרטורה ולחות מדויקות. נתחים נבחרים מחכים בין 14 ל־45 ימים — מפתחים טעם, מאבדים מים, נכנסים למיטבם.</p>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <span class="step__num">03</span>
+        <div class="step__body">
+          <h3>חיתוך אישי, על בלוק</h3>
+          <p>אין אריזה מוקדמת. אתם בוחרים, אנחנו חותכים מולכם — לעובי שביקשתם, לפי הזמנה. כי אנטריקוט לסטייק הוא לא אנטריקוט לצלי.</p>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <span class="step__num">04</span>
+        <div class="step__body">
+          <h3>אריזה ומשלוח קר</h3>
+          <p>נייר קצבים אקולוגי, ארגז קר עם קרח יבש, משלוח עד הדלת בהוד השרון והסביבה. הבשר מגיע אליכם בטמפרטורת חנות, מוכן למקרר או למקפיא.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== WHY ============== -->
+<section class="section why" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="eyebrow">004 · למה אנחנו</span>
+      <h2 class="section__title" id="why-h">ארבעה דברים <em>שלא מתפשרים.</em></h2>
+    </header>
+
+    <div class="why__grid">
+
+      <article class="feat reveal">
+        <div class="feat__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L13 7 L18 7 L14 11 L16 17 L12 13 L8 17 L10 11 L6 7 L11 7 Z"/></svg>
+        </div>
+        <h4>איכות בוטיק</h4>
+        <p>נתחים נבחרים אישית, בקרה הדוקה, יחס שלא תקבלו ברשת.</p>
+      </article>
+
+      <article class="feat reveal delay-1">
+        <div class="feat__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7 V12 L15 14"/></svg>
+        </div>
+        <h4>טריות יומית</h4>
+        <p>מה שיש בחנות הגיע השבוע. בלי שכחות במקפיא, בלי הפתעות.</p>
+      </article>
+
+      <article class="feat reveal delay-2">
+        <div class="feat__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 L8 7 L13 12 L8 17 Z"/><path d="M11 12 L21 12 M16 7 L21 12 L16 17"/></svg>
+        </div>
+        <h4>חיתוך לפי בקשה</h4>
+        <p>עובי שאתם רוצים, צורה שאתם צריכים. בלי גוזרי קופסה, רק קצב.</p>
+      </article>
+
+      <article class="feat reveal delay-3">
+        <div class="feat__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12 V8 a2 2 0 0 0 -2 -2 H6 a2 2 0 0 0 -2 2 V12"/><path d="M2 12 H22 V18 a2 2 0 0 1 -2 2 H4 a2 2 0 0 1 -2 -2 Z"/><path d="M12 6 V2"/></svg>
+        </div>
+        <h4>משלוח עד הדלת</h4>
+        <p>הזמנה עד 12:00 — מגיע באותו היום בקירור מבוקר, אריזה אטומה.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== TESTIMONIALS ============== -->
+<section class="section testify" aria-labelledby="testify-h">
+  <div class="wrap">
+    <header class="testify__head section__head reveal" style="margin-inline: auto; text-align:center;">
+      <span class="eyebrow">005 · לקוחות</span>
+      <h2 class="section__title" id="testify-h">אומרים עלינו <em>טוב.</em></h2>
+    </header>
+
+    <div class="testify__rail">
+
+      <article class="testimonial reveal">
+        <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
+        <p class="testimonial__text">אצל אייל מבינים בשר. לקחתי אנטריקוט מיושן ליום הולדת — הבן שלי שהוא טבח אמר שזה הסטייק הכי טוב שהוא אכל בחיים.</p>
+        <div class="testimonial__by">
+          <div class="testimonial__avatar" aria-hidden="true">ר</div>
+          <div>
+            <strong>רותם בן־דוד</strong>
+            <small>HOD HASHARON</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial reveal delay-1">
+        <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
+        <p class="testimonial__text">השירות פה הוא מסיבה. אייל יוצא מאחורי הדלפק, שואל מה אנחנו מכינים, ממליץ נתח מתאים. נתחיתי לחזור.</p>
+        <div class="testimonial__by">
+          <div class="testimonial__avatar" aria-hidden="true">ש</div>
+          <div>
+            <strong>שירה לוי</strong>
+            <small>RAANANA</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial reveal delay-2">
+        <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
+        <p class="testimonial__text">קבב הבית של אייל זה משהו אחר. מזמין כל שישי כבר שנתיים. טריות, ריחות, ויחס — כמו פעם.</p>
+        <div class="testimonial__by">
+          <div class="testimonial__avatar" aria-hidden="true">י</div>
+          <div>
+            <strong>יואב כהן</strong>
+            <small>HERZLIYA</small>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== VISIT ============== -->
+<section class="section visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="eyebrow">006 · בקרו אותנו</span>
+      <h2 class="section__title" id="visit-h">החנות פתוחה. <em>בואו לבחור.</em></h2>
+      <p class="section__lead">
+        ריח של תיבול, ויטרינה מלאה, סכין שמלוטשת ברגע. אם אתם בסביבה — קפצו, יש לנו טעם להציע.
+      </p>
+    </header>
+
+    <div class="visit__grid">
+
+      <div class="visit__card reveal">
+        <h3>הקואורדינטות שלנו</h3>
+        <div class="visit__rows">
+
+          <div class="visit__row">
+            <div class="visit__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>כתובת</strong>
+              <span>ששת הימים 50, הוד השרון</span>
+            </div>
+          </div>
+
+          <div class="visit__row">
+            <div class="visit__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>טלפון</strong>
+              <span><a href="tel:+972546794588" dir="ltr">054-679-4588</a></span>
+            </div>
+          </div>
+
+          <div class="visit__row">
+            <div class="visit__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6 V12 L16 14"/></svg>
+            </div>
+            <div>
+              <strong>שעות פתיחה</strong>
+              <span>
+                ראשון–חמישי · 08:00 — 20:00<br/>
+                שישי · 07:30 — 15:00<br/>
+                שבת · סגור
+              </span>
+            </div>
+          </div>
+
+          <div class="visit__row">
+            <div class="visit__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 8l3-3 M5 19l3-3"/></svg>
+            </div>
+            <div>
+              <strong>אינסטגרם</strong>
+              <span><a href="https://www.instagram.com/eyal_aloni/" target="_blank" rel="noopener" dir="ltr">@eyal_aloni</a></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="visit__map reveal delay-1" aria-label="מפה — הוד השרון">
+        <div class="visit__pin">
+          <div class="pin"></div>
+          <span>אייל הקצב · הוד השרון</span>
+        </div>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ששת+הימים+50+הוד+השרון" target="_blank" rel="noopener">
+          לפתיחת ניווט
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M7 7 H17 V17"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <h5>EYAL · HAKATZAV</h5>
+        <p class="footer__about">קצביית בוטיק בלב הוד השרון. אהבה לבשר, מאז 1985.</p>
+      </div>
+      <div>
+        <h5>NAVIGATION</h5>
+        <ul>
+          <li><a href="#about">הסיפור</a></li>
+          <li><a href="#cuts">הנתחים</a></li>
+          <li><a href="#process">התהליך</a></li>
+          <li><a href="#visit">בקרו אותנו</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>CONTACT</h5>
+        <ul>
+          <li><a href="tel:+972546794588" dir="ltr">054-679-4588</a></li>
+          <li><a href="https://wa.me/972546794588" target="_blank" rel="noopener">WhatsApp להזמנות</a></li>
+          <li><a href="https://www.instagram.com/eyal_aloni/" target="_blank" rel="noopener">Instagram</a></li>
+          <li>ששת הימים 50, הוד השרון</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> אייל הקצב · כל הזכויות שמורות</span>
+      <div class="footer__socials" aria-label="רשתות חברתיות">
+        <a href="https://wa.me/972546794588" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.2-1.4c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/eyal_aloni/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9z"/></svg>
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=ששת+הימים+50+הוד+השרון" target="_blank" rel="noopener" aria-label="Google Maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============== FLOATING WHATSAPP ============== -->
+<a class="wa" href="https://wa.me/972546794588?text=שלום,%20אשמח%20להזמין..." target="_blank" rel="noopener" aria-label="צור קשר ב־WhatsApp">
+  <span class="wa__icon" aria-hidden="true">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.2-1.4c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+  </span>
+  <span class="wa__label">
+    דברו איתנו
+    <small>WhatsApp · מענה מהיר</small>
+  </span>
+</a>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Sticky nav state
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 30) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile drawer
+  const menuBtn = document.getElementById('menuBtn');
+  const drawer  = document.getElementById('drawer');
+  const setMenu = (open) => {
+    document.body.classList.toggle('menu-open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    drawer.setAttribute('aria-hidden', String(!open));
+  };
+  menuBtn.addEventListener('click', () => {
+    const open = !document.body.classList.contains('menu-open');
+    setMenu(open);
+  });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Parallax for hero floating elements
+  const parallaxEls = document.querySelectorAll('[data-parallax]');
+  let ticking = false;
+  const updateParallax = () => {
+    const y = window.scrollY;
+    parallaxEls.forEach(el => {
+      const factor = parseFloat(el.dataset.parallax) || 0;
+      const offset = (y / 100) * factor;
+      el.style.transform = `translate3d(0, ${offset}px, 0)`;
+    });
+    ticking = false;
+  };
+  document.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Smooth-scroll for nav links (offset for fixed header)
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id.length > 1 && document.querySelector(id)) {
+        e.preventDefault();
+        const el = document.querySelector(id);
+        const top = el.getBoundingClientRect().top + window.scrollY - 70;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // 3D tilt on cut cards (pointer)
+  const tiltEls = document.querySelectorAll('.cut');
+  tiltEls.forEach(card => {
+    let raf;
+    const onMove = (e) => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        card.style.transform = `perspective(900px) rotateX(${(-y*5).toFixed(2)}deg) rotateY(${(x*5).toFixed(2)}deg) translateY(-6px)`;
+      });
+    };
+    const reset = () => { card.style.transform = ''; };
+    card.addEventListener('pointermove', onMove);
+    card.addEventListener('pointerleave', reset);
+  });
+</script>
+
+</body>
+</html>
