@@ -678,24 +678,33 @@
   .hero__foot {
     grid-area: foot;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    padding-block-start: 26px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-block-start: 22px;
     border-block-start: 1px solid rgba(240,227,207,.1);
     align-self: end;
   }
-  .hero__foot > div {
-    padding-inline-end: 14px;
+  .hero__foot > div:not(.hero__ctas):not(.hero__lede) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 14px;
+    padding-block: 12px;
+    border-block-start: 1px solid rgba(240,227,207,.07);
+  }
+  .hero__foot > div:not(.hero__ctas):not(.hero__lede):first-of-type {
+    border-block-start: 0;
+    padding-block-start: 4px;
   }
   .hero__foot strong {
     display: block;
     font-family: var(--display);
     font-weight: 400;
     color: var(--bone);
-    font-size: clamp(28px, 3.5vw, 40px);
+    font-size: 30px;
     letter-spacing: -.02em;
     line-height: 1;
-    margin-block-end: 6px;
+    min-width: 72px;
   }
   .hero__foot strong em {
     font-family: var(--latin);
@@ -703,12 +712,39 @@
     color: var(--blood-3);
   }
   .hero__foot span {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: rgba(240,227,207,.55);
+    font-family: var(--sans);
+    font-size: 13.5px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: rgba(240,227,207,.7);
     line-height: 1.45;
+  }
+  @media (min-width: 560px) {
+    .hero__foot {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .hero__foot > div:not(.hero__ctas):not(.hero__lede) {
+      display: block;
+      padding-block: 0;
+      padding-inline-end: 14px;
+      border-block-start: 0;
+    }
+    .hero__foot > div:not(.hero__ctas):not(.hero__lede):first-of-type {
+      padding-block-start: 0;
+    }
+    .hero__foot strong {
+      font-size: clamp(28px, 3.5vw, 40px);
+      margin-block-end: 8px;
+      min-width: 0;
+    }
+    .hero__foot span {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: rgba(240,227,207,.55);
+    }
   }
 
   /* =============== MARQUEE =============== */
@@ -823,33 +859,33 @@
   .about__text p strong { color: var(--blood-3); font-weight: 700; }
   .quote {
     margin-block-start: 36px;
-    padding: 28px 32px;
+    padding: clamp(20px, 4vw, 28px) clamp(20px, 4vw, 32px);
     border-inline-start: 3px solid var(--blood-3);
     background: rgba(139,20,20,.08);
-    font-family: var(--latin);
-    font-style: italic;
-    font-size: clamp(22px, 3vw, 30px);
-    line-height: 1.4;
+    font-family: var(--display);
+    font-style: normal;
+    font-size: clamp(20px, 2.6vw, 28px);
+    line-height: 1.45;
+    letter-spacing: -.01em;
     color: var(--bone);
     border-radius: 0;
     position: relative;
   }
   .quote cite {
     display: block;
-    margin-block-start: 14px;
+    margin-block-start: 16px;
     font-style: normal;
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: .25em;
+    font-family: var(--sans);
+    font-size: 13px;
+    letter-spacing: 0;
     color: var(--blood-3);
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 700;
   }
 
   /* About — cuts diagram card */
   .chart {
     position: relative;
-    aspect-ratio: 4/5;
     background: #1a1a1a;
     border-radius: 2px;
     overflow: hidden;
@@ -862,12 +898,12 @@
   .chart:hover { transform: rotate(0); }
   .chart__diagram {
     width: 100%;
-    height: 100%;
+    line-height: 0;
   }
   .chart__diagram img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     filter: contrast(1.05) saturate(.95);
     transition: transform .8s var(--ease);
   }
