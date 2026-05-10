@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<meta name="theme-color" content="#1a0f0d" />
+<meta name="theme-color" content="#180404" />
 <meta name="color-scheme" content="dark" />
 
-<title>אייל הקצב · הוד השרון — אהבה לבשר</title>
-<meta name="description" content="אייל הקצב, קצביית בוטיק בהוד השרון. נתחי בשר טריים, איכות בלתי מתפשרת, יחס אישי וניסיון של דורות. אהבה לבשר — בכל נתח." />
+<title>אייל הקצב · הוד השרון — בשר. בלי קיצורי דרך.</title>
+<meta name="description" content="אייל הקצב, קצביית בוטיק בהוד השרון. בשר טרי, חיתוך אישי, ועבודה ישירה מול הספקים. בלי תיווך, בלי הקפאות, בלי קיצורי דרך." />
 <meta name="keywords" content="אייל הקצב, קצביה הוד השרון, אטליז הוד השרון, בשר טרי, נתחי בוטיק, אנטריקוט, פילה, סטייקים, המבורגר ביתי, צלי, טלה, עוף טרי, קצב בוטיק" />
 <meta name="author" content="אייל הקצב" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -17,14 +17,14 @@
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="he_IL" />
 <meta property="og:site_name" content="אייל הקצב — הוד השרון" />
-<meta property="og:title" content="אייל הקצב · אהבה לבשר" />
-<meta property="og:description" content="קצביית בוטיק בהוד השרון. נתחים טריים, יחס אישי, איכות שמרגישים." />
+<meta property="og:title" content="אייל הקצב · בשר. בלי קיצורי דרך." />
+<meta property="og:description" content="קצביית בוטיק בהוד השרון. סכין חדה, יד יציבה, בשר אמיתי." />
 <meta property="og:url" content="https://eyalhakatzav.co.il/" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="אייל הקצב · אהבה לבשר" />
-<meta name="twitter:description" content="קצביית בוטיק בהוד השרון — איכות בלתי מתפשרת." />
+<meta name="twitter:title" content="אייל הקצב · בשר. בלי קיצורי דרך." />
+<meta name="twitter:description" content="קצביית בוטיק בהוד השרון — בשר אמיתי, בלי תפאורה." />
 
 <!-- Schema.org / SEO LocalBusiness -->
 <script type="application/ld+json">
@@ -54,31 +54,39 @@
 }
 </script>
 
-<!-- Fonts: Frank Ruhl Libre (display Hebrew serif) + Heebo (body) + Bellefair (Latin flourish) -->
+<!-- Fonts: Suez One (heavy slab Hebrew display) + Assistant (body) + DM Serif Display (Latin flourish) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;800;900&family=Heebo:wght@300;400;500;700;800&family=Bellefair&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
 <style>
   /* =============== TOKENS =============== */
   :root {
-    --bone:    #f3e7d0;   /* parchment cream */
-    --bone-2:  #e8d8b8;   /* aged paper */
-    --char:    #14100e;   /* coal */
-    --char-2:  #1f1814;   /* warm coal */
-    --char-3:  #2a2018;   /* smoke */
-    --blood:   #7a1010;   /* deep oxblood */
-    --blood-2: #a61f1f;   /* fresh */
-    --rust:    #c0411c;   /* smoked paprika */
-    --gold:    #c9a24a;   /* aged brass */
-    --gold-2:  #e2c277;   /* candle */
-    --sage:    #6b7355;
-    --line:    rgba(243,231,208,0.14);
-    --line-on-bone: rgba(20,16,14,0.18);
+    --bone:    #f0e3cf;   /* warm parchment */
+    --bone-2:  #d9c8a9;   /* aged paper */
+    --ink:     #0a0303;   /* near-black with red undertone */
+    --ink-2:   #160606;   /* deep ember */
+    --ink-3:   #221010;   /* smolder */
+    --blood:   #5a0a0a;   /* dark crimson */
+    --blood-2: #8b1414;   /* darkish red — primary */
+    --blood-3: #b51919;   /* fresh oxblood */
+    --rust:    #b13319;   /* smoked paprika */
+    --gold:    #c9a24a;   /* aged brass — sparingly */
+    --gold-2:  #e6c684;   /* candle */
+    --line:    rgba(240,227,207,0.12);
+    --line-on-bone: rgba(10,3,3,0.16);
 
-    --serif: "Frank Ruhl Libre", "Times New Roman", serif;
-    --sans:  "Heebo", "Segoe UI", system-ui, sans-serif;
-    --latin: "Bellefair", "Times New Roman", serif;
+    /* legacy aliases — kept so older selectors don't break */
+    --char:   var(--ink);
+    --char-2: var(--ink-2);
+    --char-3: var(--ink-3);
+
+    --display: "Suez One", "Times New Roman", serif;
+    --sans:    "Assistant", "Segoe UI", system-ui, sans-serif;
+    --latin:   "DM Serif Display", "Times New Roman", serif;
+    --mono:    "Space Mono", ui-monospace, monospace;
+    /* legacy alias */
+    --serif:   var(--display);
 
     --container: 1240px;
     --pad: clamp(20px, 5vw, 56px);
@@ -92,9 +100,10 @@
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body {
     font-family: var(--sans);
-    background: var(--char);
+    background: var(--ink);
     color: var(--bone);
     line-height: 1.55;
+    font-weight: 400;
     overflow-x: clip;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -105,7 +114,7 @@
   button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 
   /* Selection */
-  ::selection { background: var(--blood-2); color: var(--bone); }
+  ::selection { background: var(--blood-3); color: var(--bone); }
 
   /* Focus visible */
   :focus { outline: none; }
@@ -154,18 +163,19 @@
 
   /* =============== TYPOGRAPHY =============== */
   .display {
-    font-family: var(--serif);
-    font-weight: 800;
+    font-family: var(--display);
+    font-weight: 400;
     line-height: .92;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
   }
-  .latin { font-family: var(--latin); letter-spacing: .12em; }
+  .latin { font-family: var(--latin); letter-spacing: .04em; font-style: italic; }
   .eyebrow {
-    font-family: var(--latin);
-    font-size: 12px;
-    letter-spacing: .35em;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .28em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--blood-3);
+    font-weight: 700;
   }
 
   /* =============== LAYOUT =============== */
@@ -185,10 +195,10 @@
     border-block-end: 1px solid transparent;
   }
   .nav.scrolled {
-    background: rgba(20,16,14,.78);
+    background: rgba(10,3,3,.82);
     backdrop-filter: blur(18px) saturate(140%);
     -webkit-backdrop-filter: blur(18px) saturate(140%);
-    border-block-end-color: var(--line);
+    border-block-end-color: rgba(181,25,25,.22);
   }
   .nav__inner {
     display: flex;
@@ -201,30 +211,34 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: var(--serif);
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: -.01em;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -.015em;
   }
   .brand__mark {
-    width: 38px; height: 38px;
-    flex: 0 0 38px;
-    border-radius: 50%;
-    background: radial-gradient(120% 120% at 30% 30%, var(--blood-2) 0%, var(--blood) 55%, #4a0808 100%);
-    box-shadow: inset 0 0 0 1.5px var(--gold), 0 6px 18px rgba(122,16,16,.4);
+    width: 40px; height: 40px;
+    flex: 0 0 40px;
+    border-radius: 4px;
+    background:
+      linear-gradient(160deg, var(--blood-3) 0%, var(--blood-2) 50%, var(--blood) 100%);
+    box-shadow:
+      inset 0 0 0 1px rgba(240,227,207,.2),
+      0 6px 18px rgba(139,20,20,.5);
     display: grid;
     place-items: center;
-    color: var(--gold-2);
-    font-family: var(--serif);
-    font-size: 18px;
+    color: var(--bone);
+    font-family: var(--display);
+    font-size: 22px;
+    transform: rotate(-3deg);
   }
   .brand__name { display: flex; flex-direction: column; gap: 2px; }
   .brand__name small {
-    font-family: var(--latin);
+    font-family: var(--mono);
     font-size: 9px;
-    letter-spacing: .35em;
-    color: var(--gold);
-    font-weight: 400;
+    letter-spacing: .28em;
+    color: var(--blood-3);
+    font-weight: 700;
   }
   .nav__links {
     display: none;
@@ -244,28 +258,29 @@
     content: "";
     position: absolute;
     inset-block-end: 0; inset-inline: 50%;
-    width: 0; height: 1px;
-    background: var(--gold);
+    width: 0; height: 2px;
+    background: var(--blood-3);
     transition: inset-inline .35s var(--ease), width .35s var(--ease);
   }
-  .nav__links a:hover { color: var(--gold-2); }
+  .nav__links a:hover { color: var(--bone); }
   .nav__links a:hover::after { inset-inline: 0; width: 100%; }
 
   .nav__cta {
     display: none;
     align-items: center;
     gap: 8px;
-    background: var(--blood);
+    background: var(--blood-2);
     color: var(--bone);
-    padding: 11px 20px;
-    border-radius: 999px;
+    padding: 12px 22px;
+    border-radius: 2px;
     font-weight: 700;
     font-size: 13px;
-    border: 1px solid rgba(226,194,119,.4);
+    letter-spacing: .02em;
+    border: 1px solid rgba(240,227,207,.18);
     transition: transform .25s var(--ease), background .25s, box-shadow .25s;
-    box-shadow: 0 6px 24px rgba(122,16,16,.4);
+    box-shadow: 0 6px 24px rgba(139,20,20,.45);
   }
-  .nav__cta:hover { background: var(--blood-2); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(166,31,31,.5); }
+  .nav__cta:hover { background: var(--blood-3); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(181,25,25,.55); }
 
   .nav__menu {
     display: grid; place-items: center;
@@ -308,7 +323,9 @@
     position: fixed;
     inset: 0;
     z-index: 95;
-    background: linear-gradient(180deg, var(--char) 0%, var(--char-2) 100%);
+    background:
+      radial-gradient(80% 60% at 100% 0%, rgba(139,20,20,.35), transparent 60%),
+      linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
     padding: 100px var(--pad) 40px;
     display: flex;
     flex-direction: column;
@@ -319,78 +336,61 @@
   }
   body.menu-open .drawer { transform: translateY(0); }
   .drawer a {
-    font-family: var(--serif);
-    font-size: clamp(28px, 8vw, 44px);
-    font-weight: 800;
-    letter-spacing: -.01em;
-    padding-block: 14px;
-    border-block-end: 1px solid var(--line);
+    font-family: var(--display);
+    font-size: clamp(34px, 9vw, 52px);
+    font-weight: 400;
+    letter-spacing: -.02em;
+    padding-block: 16px;
+    border-block-end: 1px solid rgba(240,227,207,.1);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     gap: 16px;
     transition: color .25s, padding-inline-start .35s var(--ease);
   }
-  .drawer a:hover { color: var(--gold-2); padding-inline-start: 12px; }
+  .drawer a:hover { color: var(--blood-3); padding-inline-start: 12px; }
   .drawer a span {
-    font-family: var(--latin);
+    font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: .3em;
-    color: var(--gold);
+    letter-spacing: .25em;
+    color: var(--blood-3);
+    font-weight: 700;
   }
   .drawer__foot {
     margin-block-start: auto;
     padding-block-start: 24px;
-    color: rgba(243,231,208,0.65);
+    color: rgba(240,227,207,0.6);
     font-size: 13px;
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
-  .drawer__foot strong { color: var(--gold-2); font-family: var(--latin); letter-spacing: .15em; }
+  .drawer__foot strong { color: var(--bone); font-family: var(--mono); letter-spacing: .15em; font-weight: 700; }
 
   /* =============== HERO =============== */
   .hero {
     position: relative;
     min-height: 100svh;
-    padding: 120px var(--pad) 60px;
+    padding: 110px var(--pad) 0;
     overflow: hidden;
     isolation: isolate;
     background:
-      radial-gradient(120% 80% at 80% 10%, rgba(192,65,28,.18) 0%, transparent 55%),
-      radial-gradient(80% 60% at 10% 90%, rgba(122,16,16,.35) 0%, transparent 60%),
-      linear-gradient(180deg, #0e0a08 0%, #1a120e 60%, #2a1812 100%);
+      radial-gradient(70% 50% at 90% 0%, rgba(181,25,25,.22) 0%, transparent 55%),
+      radial-gradient(60% 80% at 0% 100%, rgba(90,10,10,.5) 0%, transparent 60%),
+      linear-gradient(180deg, #0a0303 0%, #160606 70%, #0a0303 100%);
   }
-  .hero::after {
-    /* vignette */
-    content: "";
-    position: absolute; inset: 0;
-    background: radial-gradient(120% 80% at 50% 60%, transparent 40%, rgba(0,0,0,.6) 100%);
-    pointer-events: none;
-    z-index: 1;
-  }
+  /* Cross-hair grid backdrop */
   .hero__bg {
     position: absolute;
     inset: 0;
     pointer-events: none;
     z-index: 0;
-  }
-  .hero__bg svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-
-  /* Floating chart elements */
-  .float {
-    position: absolute;
-    pointer-events: none;
-    opacity: .8;
-    will-change: transform;
-  }
-  .float--1 { top: 15%; right: -8%; width: 280px; opacity: .25; }
-  .float--2 { bottom: 18%; left: -6%; width: 220px; opacity: .18; }
-  .float--3 { top: 55%; right: 10%; width: 90px; opacity: .35; }
-  @media (min-width: 760px) {
-    .float--1 { right: 5%; width: 360px; opacity: .3; }
-    .float--2 { left: 6%; width: 300px; opacity: .22; }
-    .float--3 { right: 18%; width: 110px; }
+    background-image:
+      linear-gradient(rgba(240,227,207,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(240,227,207,.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(120% 80% at 50% 30%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(120% 80% at 50% 30%, black 30%, transparent 80%);
   }
 
   .hero__inner {
@@ -399,99 +399,128 @@
     max-width: var(--container);
     margin-inline: auto;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: calc(100svh - 180px);
-    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "meta"
+      "title"
+      "photo"
+      "foot";
+    gap: 28px;
+    padding-block-end: 40px;
+  }
+  @media (min-width: 880px) {
+    .hero__inner {
+      grid-template-columns: 1.15fr .85fr;
+      grid-template-areas:
+        "meta   meta"
+        "title  photo"
+        "foot   photo";
+      align-items: center;
+      gap: 0 48px;
+      min-height: calc(100svh - 130px);
+      padding-block-end: 60px;
+    }
   }
 
-  .hero__top {
+  .hero__meta {
+    grid-area: meta;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
+    padding-block-end: 20px;
+    border-block-end: 1px solid rgba(240,227,207,.1);
   }
-  .hero__top .pill {
+  .hero__meta .pill {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 9px 16px;
-    border-radius: 999px;
-    background: rgba(243,231,208,.06);
-    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 2px;
+    background: rgba(181,25,25,.12);
+    border: 1px solid rgba(181,25,25,.35);
     font-size: 12px;
-    font-weight: 500;
-    color: rgba(243,231,208,.85);
+    font-weight: 600;
+    color: var(--bone);
     backdrop-filter: blur(6px);
   }
   .pill__dot {
-    width: 8px; height: 8px;
+    width: 7px; height: 7px;
     border-radius: 50%;
-    background: #4ade80;
-    box-shadow: 0 0 0 4px rgba(74,222,128,.18);
+    background: var(--blood-3);
+    box-shadow: 0 0 0 4px rgba(181,25,25,.18);
     animation: pulse 2.4s var(--ease) infinite;
   }
   @keyframes pulse {
-    0%,100% { box-shadow: 0 0 0 4px rgba(74,222,128,.18); }
-    50%     { box-shadow: 0 0 0 8px rgba(74,222,128,.05); }
+    0%,100% { box-shadow: 0 0 0 4px rgba(181,25,25,.22); }
+    50%     { box-shadow: 0 0 0 9px rgba(181,25,25,.04); }
   }
-  .hero__loc {
-    font-family: var(--latin);
+  .hero__index {
+    font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: .35em;
-    color: var(--gold);
+    letter-spacing: .25em;
+    color: rgba(240,227,207,.55);
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
   }
+  .hero__index b { color: var(--blood-3); font-weight: 700; }
 
-  .hero__center { align-self: center; }
+  /* TITLE COLUMN */
   .hero__title {
-    font-family: var(--serif);
-    font-weight: 900;
-    font-size: clamp(72px, 22vw, 280px);
-    line-height: .82;
-    letter-spacing: -0.02em;
+    grid-area: title;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(72px, 13vw, 200px);
+    line-height: .86;
+    letter-spacing: -0.025em;
     color: var(--bone);
     margin: 0;
     position: relative;
-    text-align: center;
+    padding-block-start: 8px;
   }
-  .hero__title .word {
+  .hero__title .row { display: block; overflow: hidden; }
+  .hero__title .row > span {
     display: inline-block;
-    overflow: hidden;
-    vertical-align: top;
-  }
-  .hero__title .word > span {
-    display: inline-block;
-    transform: translateY(110%);
+    transform: translateY(105%);
     animation: rise 1.1s var(--ease-back) forwards;
   }
-  .hero__title .word--2 > span { animation-delay: .12s; }
-  .hero__title .word--3 > span { animation-delay: .22s; color: var(--rust); font-style: italic; }
+  .hero__title .row--2 > span { animation-delay: .1s; color: var(--blood-3); }
+  .hero__title .row--3 > span { animation-delay: .2s; }
+  .hero__title .accent {
+    font-family: var(--latin);
+    font-style: italic;
+    color: var(--bone-2);
+    font-weight: 400;
+    font-size: .65em;
+    letter-spacing: -.01em;
+  }
+  .hero__title em {
+    font-style: italic;
+    font-family: var(--latin);
+    color: var(--blood-3);
+  }
   @keyframes rise { to { transform: translateY(0); } }
 
-  .hero__title .stroke {
-    -webkit-text-stroke: 1.5px var(--gold-2);
-    color: transparent;
-  }
-
-  .hero__sub {
-    text-align: center;
-    color: rgba(243,231,208,.78);
-    font-size: clamp(15px, 1.6vw, 19px);
-    max-width: 640px;
-    margin: 24px auto 0;
+  .hero__lede {
+    margin: 28px 0 0;
+    max-width: 480px;
+    color: rgba(240,227,207,.78);
+    font-size: clamp(15px, 1.5vw, 17px);
     line-height: 1.65;
     opacity: 0;
     transform: translateY(14px);
     animation: fadeUp .9s .55s var(--ease) forwards;
   }
+  .hero__lede strong { color: var(--bone); font-weight: 600; }
   @keyframes fadeUp { to { opacity: 1; transform: none; } }
 
   .hero__ctas {
     display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-block-start: 32px;
+    gap: 10px;
+    margin-block-start: 28px;
     flex-wrap: wrap;
     opacity: 0;
     transform: translateY(14px);
@@ -501,71 +530,192 @@
   .btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 16px 28px;
-    border-radius: 999px;
+    gap: 12px;
+    padding: 16px 26px;
+    border-radius: 2px;
     font-weight: 700;
-    font-size: 15px;
-    transition: transform .3s var(--ease), background .3s, box-shadow .3s, color .3s;
+    font-size: 14px;
+    letter-spacing: .02em;
+    transition: transform .3s var(--ease), background .3s, box-shadow .3s, color .3s, border-color .3s;
     border: 1px solid transparent;
     will-change: transform;
+    text-transform: none;
+    font-family: var(--sans);
   }
   .btn--primary {
-    background: linear-gradient(180deg, var(--blood-2), var(--blood));
+    background: var(--blood-2);
     color: var(--bone);
-    border-color: rgba(226,194,119,.35);
-    box-shadow: 0 12px 30px rgba(122,16,16,.45), inset 0 1px 0 rgba(255,255,255,.08);
+    border-color: var(--blood-2);
+    box-shadow: 0 12px 30px rgba(139,20,20,.45), inset 0 1px 0 rgba(255,255,255,.08);
   }
-  .btn--primary:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(166,31,31,.55), inset 0 1px 0 rgba(255,255,255,.1); }
+  .btn--primary:hover { background: var(--blood-3); border-color: var(--blood-3); transform: translateY(-3px); box-shadow: 0 18px 40px rgba(181,25,25,.6); }
   .btn--ghost {
-    background: rgba(243,231,208,.05);
-    border-color: var(--line);
+    background: transparent;
+    border-color: rgba(240,227,207,.25);
     color: var(--bone);
-    backdrop-filter: blur(8px);
   }
-  .btn--ghost:hover { background: rgba(243,231,208,.12); transform: translateY(-3px); }
+  .btn--ghost:hover { background: rgba(240,227,207,.06); border-color: var(--bone); transform: translateY(-3px); }
   .btn .arrow { transform: scaleX(-1); transition: transform .3s var(--ease); }
   .btn:hover .arrow { transform: scaleX(-1) translateX(-4px); }
 
-  .hero__bottom {
+  /* PHOTO COLUMN */
+  .hero__photo {
+    grid-area: photo;
+    position: relative;
+    align-self: stretch;
+    min-height: 380px;
+    isolation: isolate;
+  }
+  @media (min-width: 880px) {
+    .hero__photo { min-height: 100%; }
+  }
+  .hero__photo-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--ink-3);
+    box-shadow:
+      0 30px 80px rgba(0,0,0,.6),
+      inset 0 0 0 1px rgba(240,227,207,.08);
+  }
+  .hero__photo-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    filter:
+      contrast(1.08)
+      saturate(.85)
+      brightness(.85);
+    transform: scale(1.05);
+    transition: transform 1.2s var(--ease);
+  }
+  .hero__photo:hover .hero__photo-img { transform: scale(1.08); }
+  /* red wash */
+  .hero__photo-frame::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(180deg, rgba(10,3,3,0) 30%, rgba(10,3,3,.85) 100%),
+      linear-gradient(160deg, rgba(139,20,20,.18) 0%, rgba(10,3,3,.45) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  /* corner ticks */
+  .hero__photo-frame::after {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(240,227,207,.18);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .hero__photo-tag {
+    position: absolute;
+    inset-block-end: 22px;
+    inset-inline: 22px;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: end;
-    gap: 24px;
-    color: rgba(243,231,208,.6);
-    font-size: 12px;
-    letter-spacing: .12em;
+    color: var(--bone);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .22em;
     text-transform: uppercase;
-    font-family: var(--latin);
   }
-  .hero__bottom strong { color: var(--gold-2); font-size: 32px; font-family: var(--serif); display: block; letter-spacing: -.02em; }
-  .hero__stats {
+  .hero__photo-tag b {
+    display: block;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -.01em;
+    color: var(--bone);
+    line-height: 1;
+    margin-block-end: 6px;
+    text-transform: none;
+  }
+  .hero__photo-tag .right { text-align: end; color: var(--blood-3); }
+
+  /* big number stamp on photo */
+  .hero__stamp {
+    position: absolute;
+    top: -18px;
+    inset-inline-start: -18px;
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: var(--blood-2);
+    color: var(--bone);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    box-shadow: 0 14px 30px rgba(139,20,20,.5);
+    z-index: 4;
+    transform: rotate(-8deg);
+    border: 1px solid rgba(240,227,207,.25);
+  }
+  .hero__stamp b {
+    display: block;
+    font-family: var(--display);
+    font-size: 30px;
+    line-height: 1;
+  }
+  .hero__stamp span {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-block-start: 3px;
+    color: rgba(240,227,207,.85);
+  }
+
+  /* HERO FOOT */
+  .hero__foot {
+    grid-area: foot;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    flex: 1;
-    max-width: 520px;
+    gap: 8px;
+    padding-block-start: 26px;
+    border-block-start: 1px solid rgba(240,227,207,.1);
+    align-self: end;
   }
-  .hero__stats > div {
-    border-block-start: 1px solid var(--line);
-    padding-block-start: 12px;
+  .hero__foot > div {
+    padding-inline-end: 14px;
   }
-  .hero__scroll {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    opacity: .6;
+  .hero__foot strong {
+    display: block;
+    font-family: var(--display);
+    font-weight: 400;
+    color: var(--bone);
+    font-size: clamp(28px, 3.5vw, 40px);
+    letter-spacing: -.02em;
+    line-height: 1;
+    margin-block-end: 6px;
   }
-  .hero__scroll svg { animation: scrollHint 2.2s var(--ease) infinite; }
-  @keyframes scrollHint { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
-  @media (min-width: 760px) { .hero__scroll { display: flex; } }
+  .hero__foot strong em {
+    font-family: var(--latin);
+    font-style: italic;
+    color: var(--blood-3);
+  }
+  .hero__foot span {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: rgba(240,227,207,.55);
+    line-height: 1.45;
+  }
 
   /* =============== MARQUEE =============== */
   .marquee {
-    background: var(--bone);
-    color: var(--char);
-    border-block: 1px solid var(--line-on-bone);
+    background: var(--blood);
+    color: var(--bone);
+    border-block: 1px solid rgba(240,227,207,.12);
     overflow: hidden;
     position: relative;
     z-index: 3;
@@ -575,7 +725,7 @@
     gap: 56px;
     padding-block: 22px;
     width: max-content;
-    animation: scroll 38s linear infinite;
+    animation: scroll 42s linear infinite;
   }
   @keyframes scroll {
     from { transform: translateX(0); }
@@ -585,14 +735,20 @@
     display: inline-flex;
     align-items: center;
     gap: 18px;
-    font-family: var(--serif);
-    font-weight: 800;
-    font-size: clamp(22px, 4vw, 38px);
-    letter-spacing: -.01em;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(22px, 4vw, 36px);
+    letter-spacing: -.015em;
     white-space: nowrap;
+    color: var(--bone);
   }
-  .marquee__item svg { color: var(--blood); flex: 0 0 auto; }
-  .marquee__item--alt { color: var(--blood); font-style: italic; }
+  .marquee__item svg { color: var(--bone-2); flex: 0 0 auto; }
+  .marquee__item--alt {
+    color: var(--bone-2);
+    font-family: var(--latin);
+    font-style: italic;
+    font-weight: 400;
+  }
 
   /* =============== SECTION =============== */
   section { position: relative; }
@@ -607,26 +763,32 @@
     max-width: 880px;
   }
   .section__title {
-    font-family: var(--serif);
-    font-weight: 800;
-    font-size: clamp(40px, 8vw, 88px);
-    line-height: .95;
-    letter-spacing: -.02em;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(44px, 7.5vw, 92px);
+    line-height: .92;
+    letter-spacing: -.025em;
     margin: 0;
   }
-  .section__title em { font-style: italic; color: var(--blood-2); }
+  .section__title em {
+    font-family: var(--latin);
+    font-style: italic;
+    color: var(--blood-3);
+    font-weight: 400;
+  }
   .section__lead {
     font-size: clamp(15px, 1.6vw, 18px);
-    color: rgba(243,231,208,.75);
+    color: rgba(240,227,207,.75);
     line-height: 1.7;
     max-width: 620px;
+    font-weight: 400;
   }
   .section--bone {
     background: var(--bone);
-    color: var(--char);
+    color: var(--ink);
   }
-  .section--bone .section__lead { color: rgba(20,16,14,.75); }
-  .section--bone .section__title em { color: var(--blood); }
+  .section--bone .section__lead { color: rgba(10,3,3,.7); }
+  .section--bone .section__title em { color: var(--blood-2); }
 
   /* Reveal */
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
@@ -639,8 +801,8 @@
   /* =============== ABOUT =============== */
   .about {
     background:
-      radial-gradient(60% 50% at 100% 0%, rgba(192,65,28,.1), transparent 60%),
-      var(--char);
+      radial-gradient(60% 50% at 100% 0%, rgba(139,20,20,.18), transparent 60%),
+      var(--ink);
   }
   .about__grid {
     display: grid;
@@ -654,119 +816,68 @@
   .about__text p {
     font-size: clamp(15px, 1.55vw, 18px);
     line-height: 1.85;
-    color: rgba(243,231,208,.85);
+    color: rgba(240,227,207,.85);
     margin-block: 0 22px;
+    font-weight: 400;
   }
-  .about__text p strong { color: var(--gold-2); font-weight: 500; }
+  .about__text p strong { color: var(--blood-3); font-weight: 700; }
   .quote {
     margin-block-start: 36px;
     padding: 28px 32px;
-    border-inline-start: 3px solid var(--blood-2);
-    background: rgba(243,231,208,.03);
-    font-family: var(--serif);
+    border-inline-start: 3px solid var(--blood-3);
+    background: rgba(139,20,20,.08);
+    font-family: var(--latin);
     font-style: italic;
     font-size: clamp(22px, 3vw, 30px);
     line-height: 1.4;
     color: var(--bone);
-    border-radius: 0 8px 8px 0;
+    border-radius: 0;
     position: relative;
   }
   .quote cite {
     display: block;
     margin-block-start: 14px;
     font-style: normal;
-    font-family: var(--latin);
-    font-size: 12px;
-    letter-spacing: .3em;
-    color: var(--gold);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .25em;
+    color: var(--blood-3);
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
-  /* About card stack — vintage butcher chart */
+  /* About — cuts diagram card */
   .chart {
     position: relative;
     aspect-ratio: 4/5;
-    background: var(--bone);
-    color: var(--char);
-    border-radius: 12px;
+    background: #1a1a1a;
+    border-radius: 2px;
     overflow: hidden;
     box-shadow:
-      0 30px 80px rgba(0,0,0,.5),
-      inset 0 0 0 1px rgba(20,16,14,.1),
-      inset 0 0 100px rgba(192,65,28,.05);
+      0 30px 80px rgba(0,0,0,.55),
+      inset 0 0 0 1px rgba(240,227,207,.08);
     transform: rotate(-1.5deg);
     transition: transform .8s var(--ease);
   }
   .chart:hover { transform: rotate(0); }
-  .chart::before {
-    content: "";
-    position: absolute; inset: 0;
-    background-image:
-      repeating-linear-gradient(0deg, rgba(20,16,14,.04) 0 1px, transparent 1px 32px),
-      repeating-linear-gradient(90deg, rgba(20,16,14,.04) 0 1px, transparent 1px 32px);
-    pointer-events: none;
-  }
-  .chart__head {
-    padding: 22px 26px 14px;
-    border-block-end: 1px solid rgba(20,16,14,.15);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .chart__head h4 {
-    margin: 0;
-    font-family: var(--serif);
-    font-size: 22px;
-    font-weight: 800;
-  }
-  .chart__head small {
-    font-family: var(--latin);
-    letter-spacing: .25em;
-    font-size: 10px;
-    color: var(--blood);
-  }
   .chart__diagram {
-    display: grid;
-    place-items: center;
-    padding: 8px 18px 18px;
+    width: 100%;
+    height: 100%;
   }
-  .chart__diagram svg { width: 92%; height: auto; }
-  .chart__foot {
-    position: absolute;
-    inset-block-end: 0; inset-inline: 0;
-    padding: 14px 22px;
-    background: var(--char);
-    color: var(--bone);
-    display: flex; justify-content: space-between;
-    font-family: var(--latin);
-    letter-spacing: .25em;
-    font-size: 10px;
+  .chart__diagram img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.05) saturate(.95);
+    transition: transform .8s var(--ease);
   }
-  .chart__foot span:nth-child(2) { color: var(--gold-2); }
-  .chart__stamp {
-    position: absolute;
-    top: 18px; left: 18px;
-    width: 86px; height: 86px;
-    border: 2px solid var(--blood);
-    border-radius: 50%;
-    display: grid; place-items: center;
-    text-align: center;
-    color: var(--blood);
-    font-family: var(--serif);
-    font-weight: 800;
-    transform: rotate(-12deg);
-    opacity: .8;
-  }
-  .chart__stamp span {
-    font-size: 10px;
-    letter-spacing: .15em;
-    line-height: 1.05;
-  }
-  .chart__stamp strong { font-size: 22px; display: block; }
+  .chart:hover .chart__diagram img { transform: scale(1.03); }
 
   /* =============== CUTS =============== */
   .cuts {
     background:
-      linear-gradient(180deg, var(--char) 0%, #100c0a 100%);
+      radial-gradient(70% 60% at 0% 0%, rgba(139,20,20,.16), transparent 60%),
+      linear-gradient(180deg, var(--ink) 0%, #050101 100%);
   }
   .cuts__head {
     display: flex;
@@ -787,25 +898,27 @@
   .cut {
     position: relative;
     aspect-ratio: 4/5;
-    background: linear-gradient(160deg, #261913 0%, #14100e 100%);
-    border-radius: 16px;
+    background:
+      radial-gradient(80% 60% at 50% 0%, rgba(139,20,20,.22), transparent 70%),
+      linear-gradient(160deg, #1f0808 0%, #0e0303 100%);
+    border-radius: 2px;
     overflow: hidden;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(240,227,207,.08);
     transition: transform .5s var(--ease), border-color .35s, box-shadow .5s;
     isolation: isolate;
     will-change: transform;
   }
   .cut:hover {
     transform: translateY(-6px);
-    border-color: rgba(201,162,74,.35);
-    box-shadow: 0 24px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(201,162,74,.2);
+    border-color: rgba(181,25,25,.5);
+    box-shadow: 0 24px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(181,25,25,.25);
   }
   .cut__art {
     position: absolute;
     inset-block-start: 0; inset-inline: 0;
     aspect-ratio: 1.2;
     display: grid; place-items: center;
-    background: radial-gradient(80% 80% at 50% 30%, rgba(192,65,28,.18), transparent 70%);
+    background: radial-gradient(80% 80% at 50% 30%, rgba(181,25,25,.22), transparent 70%);
     transition: transform .8s var(--ease);
   }
   .cut:hover .cut__art { transform: scale(1.05) rotate(-2deg); }
@@ -814,51 +927,56 @@
   .cut__body {
     position: absolute;
     inset-block-end: 0; inset-inline: 0;
-    padding: 18px 20px 20px;
+    padding: 20px 22px 22px;
     display: flex;
     flex-direction: column;
     gap: 6px;
     z-index: 2;
   }
   .cut__num {
-    font-family: var(--latin);
+    font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: .3em;
-    color: var(--gold);
+    letter-spacing: .25em;
+    color: var(--blood-3);
+    font-weight: 700;
   }
   .cut__name {
     margin: 0;
-    font-family: var(--serif);
-    font-weight: 800;
-    font-size: 26px;
-    letter-spacing: -.01em;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -.015em;
+    color: var(--bone);
   }
   .cut__desc {
-    color: rgba(243,231,208,.65);
+    color: rgba(240,227,207,.62);
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.55;
+    margin-block-start: 4px;
   }
   .cut__tag {
     position: absolute;
-    top: 16px; right: 16px;
-    padding: 5px 11px;
-    border-radius: 999px;
-    background: var(--blood);
+    top: 14px; right: 14px;
+    padding: 6px 11px;
+    border-radius: 2px;
+    background: var(--blood-2);
     color: var(--bone);
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: .15em;
-    border: 1px solid rgba(226,194,119,.35);
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    font-family: var(--mono);
   }
-  .cut__tag--gold { background: var(--gold); color: var(--char); border-color: transparent; }
+  .cut__tag--gold { background: var(--bone); color: var(--blood); }
 
   /* =============== PROCESS =============== */
   .process {
     background: var(--bone);
-    color: var(--char);
+    color: var(--ink);
     overflow: hidden;
   }
-  .process .section__title em { color: var(--blood); }
+  .process .section__title em { color: var(--blood-2); }
+  .process .eyebrow { color: var(--blood-2); }
   .process__steps {
     display: grid;
     gap: 0;
@@ -874,28 +992,29 @@
     position: relative;
   }
   .step:last-child { border-block-end: 1px solid var(--line-on-bone); }
-  .step:hover { background: rgba(20,16,14,.03); }
+  .step:hover { background: rgba(139,20,20,.04); }
   .step__num {
-    font-family: var(--latin);
-    font-size: clamp(36px, 8vw, 80px);
-    color: var(--blood);
-    line-height: .9;
+    font-family: var(--display);
+    font-size: clamp(48px, 9vw, 100px);
+    color: var(--blood-2);
+    line-height: .85;
     font-weight: 400;
-    min-width: clamp(60px, 10vw, 130px);
+    min-width: clamp(70px, 11vw, 150px);
     transition: transform .5s var(--ease);
+    letter-spacing: -.03em;
   }
-  .step:hover .step__num { transform: translateX(-8px); }
-  .step__body { display: grid; gap: 8px; max-width: 720px; }
+  .step:hover .step__num { transform: translateX(-8px); color: var(--blood-3); }
+  .step__body { display: grid; gap: 10px; max-width: 720px; }
   .step__body h3 {
     margin: 0;
-    font-family: var(--serif);
-    font-size: clamp(26px, 4vw, 38px);
-    font-weight: 800;
-    letter-spacing: -.01em;
+    font-family: var(--display);
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 400;
+    letter-spacing: -.02em;
   }
   .step__body p {
     margin: 0;
-    color: rgba(20,16,14,.7);
+    color: rgba(10,3,3,.7);
     font-size: 16px;
     line-height: 1.7;
   }
@@ -903,55 +1022,68 @@
   /* =============== WHY =============== */
   .why {
     background:
-      radial-gradient(50% 60% at 0% 100%, rgba(122,16,16,.25) 0%, transparent 60%),
-      linear-gradient(180deg, #100c0a 0%, var(--char) 100%);
+      radial-gradient(50% 60% at 0% 100%, rgba(139,20,20,.32) 0%, transparent 60%),
+      linear-gradient(180deg, #050101 0%, var(--ink) 100%);
   }
   .why__grid {
     display: grid;
-    gap: 16px;
+    gap: 1px;
     grid-template-columns: 1fr;
+    background: rgba(240,227,207,.08);
+    border: 1px solid rgba(240,227,207,.08);
   }
   @media (min-width: 700px)  { .why__grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1000px) { .why__grid { grid-template-columns: repeat(4, 1fr); } }
   .feat {
-    padding: 26px 24px 30px;
-    border-radius: 16px;
-    border: 1px solid var(--line);
-    background: rgba(243,231,208,.025);
-    backdrop-filter: blur(8px);
-    transition: transform .5s var(--ease), border-color .35s, background .35s;
+    padding: 36px 28px 40px;
+    border-radius: 0;
+    background: var(--ink);
+    transition: background .35s var(--ease), transform .5s var(--ease);
+    position: relative;
   }
   .feat:hover {
-    transform: translateY(-6px);
-    border-color: rgba(201,162,74,.35);
-    background: rgba(243,231,208,.05);
+    background: var(--ink-2);
   }
+  .feat::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--blood-3);
+    transition: width .4s var(--ease);
+  }
+  .feat:hover::before { width: 80%; }
   .feat__icon {
-    width: 52px; height: 52px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, rgba(192,65,28,.2), rgba(122,16,16,.2));
+    width: 48px; height: 48px;
+    border-radius: 0;
+    background: transparent;
     display: grid; place-items: center;
-    margin-block-end: 18px;
-    color: var(--gold-2);
-    border: 1px solid rgba(226,194,119,.18);
+    margin-block-end: 22px;
+    color: var(--blood-3);
+    border: 1px solid var(--blood-2);
   }
   .feat h4 {
-    margin: 0 0 10px;
-    font-family: var(--serif);
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: -.01em;
+    margin: 0 0 12px;
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -.015em;
+    color: var(--bone);
   }
   .feat p {
     margin: 0;
     font-size: 14px;
     line-height: 1.65;
-    color: rgba(243,231,208,.7);
+    color: rgba(240,227,207,.65);
   }
 
   /* =============== TESTIMONIALS =============== */
   .testify {
-    background: var(--char-2);
+    background:
+      radial-gradient(50% 60% at 100% 0%, rgba(139,20,20,.18), transparent 60%),
+      var(--ink-2);
     overflow: hidden;
   }
   .testify__head { text-align: center; max-width: 720px; margin-inline: auto; }
@@ -976,55 +1108,60 @@
     .testimonial { min-width: 84%; scroll-snap-align: center; }
   }
   .testimonial {
-    padding: 28px 26px 30px;
-    background: linear-gradient(160deg, #2a1f17 0%, #1a130f 100%);
-    border-radius: 16px;
-    border: 1px solid var(--line);
+    padding: 32px 28px 32px;
+    background: linear-gradient(160deg, #1f0808 0%, #0e0303 100%);
+    border-radius: 2px;
+    border: 1px solid rgba(240,227,207,.08);
     display: grid;
-    gap: 16px;
-    transition: transform .4s var(--ease);
+    gap: 18px;
+    transition: transform .4s var(--ease), border-color .4s;
+    position: relative;
   }
-  .testimonial:hover { transform: translateY(-5px); }
-  .testimonial__stars { color: var(--gold-2); display: flex; gap: 2px; font-size: 16px; }
+  .testimonial:hover { transform: translateY(-5px); border-color: rgba(181,25,25,.4); }
+  .testimonial__stars { color: var(--blood-3); display: flex; gap: 2px; font-size: 14px; letter-spacing: .15em; }
   .testimonial__text {
     margin: 0;
-    font-family: var(--serif);
-    font-size: 18px;
-    line-height: 1.55;
+    font-family: var(--display);
+    font-size: 19px;
+    line-height: 1.5;
     color: var(--bone);
-    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -.01em;
   }
-  .testimonial__text::before { content: "״"; color: var(--blood-2); font-size: 28px; margin-inline-end: 4px; vertical-align: -8px; }
+  .testimonial__text::before { content: "״"; color: var(--blood-3); font-size: 36px; margin-inline-end: 4px; vertical-align: -10px; font-family: var(--latin); }
   .testimonial__by {
     display: flex; align-items: center; gap: 12px;
     border-block-start: 1px solid var(--line);
     padding-block-start: 14px;
   }
   .testimonial__avatar {
-    width: 38px; height: 38px;
-    border-radius: 50%;
+    width: 40px; height: 40px;
+    border-radius: 2px;
     display: grid; place-items: center;
-    background: linear-gradient(135deg, var(--blood), var(--rust));
+    background: var(--blood-2);
     color: var(--bone);
-    font-family: var(--serif);
-    font-weight: 800;
-    font-size: 16px;
-    flex: 0 0 38px;
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 18px;
+    flex: 0 0 40px;
   }
   .testimonial__by strong {
-    display: block; font-weight: 700; font-size: 14px;
+    display: block; font-weight: 700; font-size: 14px; color: var(--bone);
   }
   .testimonial__by small {
-    font-family: var(--latin);
-    font-size: 11px;
-    letter-spacing: .15em;
-    color: var(--gold);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .22em;
+    color: var(--blood-3);
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   /* =============== VISIT =============== */
   .visit {
     background:
-      linear-gradient(180deg, var(--char) 0%, #0a0706 100%);
+      radial-gradient(60% 50% at 0% 0%, rgba(139,20,20,.18), transparent 60%),
+      linear-gradient(180deg, var(--ink) 0%, #050101 100%);
   }
   .visit__grid {
     display: grid;
@@ -1036,8 +1173,8 @@
   .visit__card {
     padding: clamp(28px, 5vw, 48px);
     background: var(--bone);
-    color: var(--char);
-    border-radius: 20px;
+    color: var(--ink);
+    border-radius: 2px;
     position: relative;
     overflow: hidden;
   }
@@ -1046,15 +1183,15 @@
     position: absolute;
     inset-block-start: -40%; inset-inline-end: -20%;
     width: 60%; aspect-ratio: 1;
-    background: radial-gradient(circle, rgba(192,65,28,.18) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(139,20,20,.2) 0%, transparent 70%);
     pointer-events: none;
   }
   .visit__card h3 {
-    margin: 0 0 22px;
-    font-family: var(--serif);
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 800;
-    letter-spacing: -.01em;
+    margin: 0 0 28px;
+    font-family: var(--display);
+    font-size: clamp(30px, 4.5vw, 44px);
+    font-weight: 400;
+    letter-spacing: -.025em;
   }
   .visit__rows { display: grid; gap: 22px; position: relative; }
   .visit__row {
@@ -1068,33 +1205,35 @@
   .visit__row:first-child { border-block-start: 0; padding-block-start: 0; }
   .visit__row strong {
     display: block;
-    font-family: var(--latin);
-    letter-spacing: .25em;
+    font-family: var(--mono);
+    letter-spacing: .22em;
     font-size: 11px;
-    color: var(--blood);
-    margin-block-end: 4px;
+    color: var(--blood-2);
+    margin-block-end: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   .visit__row span { font-size: 16px; line-height: 1.55; }
-  .visit__row a { color: var(--char); border-block-end: 1px dashed rgba(20,16,14,.3); transition: color .25s, border-color .25s; }
-  .visit__row a:hover { color: var(--blood); border-color: var(--blood); }
+  .visit__row a { color: var(--ink); border-block-end: 1px solid rgba(10,3,3,.3); transition: color .25s, border-color .25s; }
+  .visit__row a:hover { color: var(--blood-2); border-color: var(--blood-2); }
   .visit__icon {
     width: 36px; height: 36px;
-    border-radius: 10px;
+    border-radius: 2px;
     display: grid; place-items: center;
-    background: var(--char);
-    color: var(--gold-2);
+    background: var(--blood-2);
+    color: var(--bone);
     flex: 0 0 36px;
   }
 
   .visit__map {
     aspect-ratio: 4/5;
-    border-radius: 20px;
+    border-radius: 2px;
     overflow: hidden;
     position: relative;
     background:
-      radial-gradient(60% 80% at 30% 30%, #2c1f17 0%, transparent 70%),
-      linear-gradient(160deg, #1a120e 0%, #0a0706 100%);
-    border: 1px solid var(--line);
+      radial-gradient(60% 80% at 30% 30%, #2a0a0a 0%, transparent 70%),
+      linear-gradient(160deg, #160505 0%, #050101 100%);
+    border: 1px solid rgba(240,227,207,.1);
   }
   .visit__map::before {
     content: "";
@@ -1115,9 +1254,9 @@
     width: 56px; height: 56px;
     margin: 0 auto;
     border-radius: 50% 50% 50% 0;
-    background: linear-gradient(135deg, var(--blood-2), var(--blood));
+    background: linear-gradient(135deg, var(--blood-3), var(--blood-2));
     transform: rotate(-45deg);
-    box-shadow: 0 14px 30px rgba(122,16,16,.55), 0 0 0 8px rgba(166,31,31,.18);
+    box-shadow: 0 14px 30px rgba(139,20,20,.6), 0 0 0 8px rgba(181,25,25,.18);
     position: relative;
     animation: bob 3s var(--ease) infinite;
   }
@@ -1133,24 +1272,25 @@
     display: inline-block;
     margin-block-start: 28px;
     padding: 8px 16px;
-    background: rgba(20,16,14,.85);
+    background: rgba(10,3,3,.88);
     backdrop-filter: blur(8px);
-    border-radius: 999px;
-    font-family: var(--latin);
-    letter-spacing: .25em;
+    border-radius: 2px;
+    font-family: var(--mono);
+    letter-spacing: .22em;
     font-size: 11px;
-    color: var(--gold-2);
-    border: 1px solid var(--line);
+    color: var(--bone);
+    border: 1px solid rgba(240,227,207,.18);
     white-space: nowrap;
+    font-weight: 700;
   }
   .visit__map a.maplink {
     position: absolute;
     inset-block-end: 18px;
     inset-inline-end: 18px;
-    padding: 11px 18px;
-    background: var(--bone);
-    color: var(--char);
-    border-radius: 999px;
+    padding: 12px 18px;
+    background: var(--blood-2);
+    color: var(--bone);
+    border-radius: 2px;
     font-weight: 700;
     font-size: 13px;
     display: inline-flex;
@@ -1158,15 +1298,15 @@
     align-items: center;
     transition: transform .25s, background .25s;
   }
-  .visit__map a.maplink:hover { transform: translateY(-2px); background: var(--gold-2); }
+  .visit__map a.maplink:hover { transform: translateY(-2px); background: var(--blood-3); }
 
   /* =============== FOOTER =============== */
   .footer {
-    background: #060403;
-    color: rgba(243,231,208,.65);
+    background: #050101;
+    color: rgba(240,227,207,.6);
     padding-block: 60px 28px;
     padding-inline: var(--pad);
-    border-block-start: 1px solid var(--line);
+    border-block-start: 1px solid rgba(240,227,207,.08);
   }
   .footer__grid {
     display: grid;
@@ -1176,40 +1316,44 @@
   }
   @media (min-width: 760px) { .footer__grid { grid-template-columns: 1.4fr 1fr 1fr; } }
   .footer h5 {
-    font-family: var(--latin);
-    letter-spacing: .3em;
+    font-family: var(--mono);
+    letter-spacing: .25em;
     font-size: 11px;
-    color: var(--gold);
-    margin: 0 0 16px;
+    color: var(--blood-3);
+    margin: 0 0 18px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   .footer__about {
-    font-family: var(--serif);
-    font-size: 22px;
-    line-height: 1.4;
+    font-family: var(--display);
+    font-size: 24px;
+    line-height: 1.35;
     color: var(--bone);
+    font-weight: 400;
+    letter-spacing: -.015em;
   }
   .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
   .footer ul a { transition: color .25s; }
-  .footer ul a:hover { color: var(--gold-2); }
+  .footer ul a:hover { color: var(--blood-3); }
   .footer__bottom {
-    border-block-start: 1px solid var(--line);
+    border-block-start: 1px solid rgba(240,227,207,.08);
     padding-block-start: 24px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
     font-size: 12px;
-    color: rgba(243,231,208,.45);
+    color: rgba(240,227,207,.45);
   }
   .footer__socials { display: flex; gap: 10px; }
   .footer__socials a {
     width: 38px; height: 38px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
+    border-radius: 2px;
+    border: 1px solid rgba(240,227,207,.12);
     display: grid; place-items: center;
     transition: background .25s, border-color .25s, transform .25s;
   }
-  .footer__socials a:hover { background: var(--blood); border-color: var(--blood-2); transform: translateY(-3px); color: var(--bone); }
+  .footer__socials a:hover { background: var(--blood-2); border-color: var(--blood-3); transform: translateY(-3px); color: var(--bone); }
 
   /* =============== FLOATING WHATSAPP =============== */
   .wa {
@@ -1288,16 +1432,16 @@
     </a>
     <nav aria-label="ראשי">
       <ul class="nav__links">
-        <li><a href="#about">הסיפור</a></li>
-        <li><a href="#cuts">הנתחים</a></li>
-        <li><a href="#process">התהליך</a></li>
-        <li><a href="#why">למה אנחנו</a></li>
-        <li><a href="#visit">בקרו אותנו</a></li>
+        <li><a href="#about">מי אנחנו</a></li>
+        <li><a href="#cuts">מה יש היום</a></li>
+        <li><a href="#process">איך זה עובד</a></li>
+        <li><a href="#why">למה כדאי</a></li>
+        <li><a href="#visit">בואו לבקר</a></li>
       </ul>
     </nav>
     <a href="tel:+972546794588" class="nav__cta" aria-label="להזמנה טלפונית">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      הזמנה טלפונית
+      להתקשר
     </a>
     <button class="nav__menu" id="menuBtn" aria-label="תפריט" aria-controls="drawer" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -1307,13 +1451,13 @@
 
 <!-- ============== DRAWER ============== -->
 <nav class="drawer" id="drawer" aria-label="ניווט נייד" aria-hidden="true">
-  <a href="#about"><span>01</span>הסיפור</a>
-  <a href="#cuts"><span>02</span>הנתחים</a>
-  <a href="#process"><span>03</span>התהליך</a>
-  <a href="#why"><span>04</span>למה אנחנו</a>
-  <a href="#visit"><span>05</span>בקרו אותנו</a>
+  <a href="#about"><span>01</span>מי אנחנו</a>
+  <a href="#cuts"><span>02</span>מה יש היום</a>
+  <a href="#process"><span>03</span>איך זה עובד</a>
+  <a href="#why"><span>04</span>למה כדאי</a>
+  <a href="#visit"><span>05</span>בואו לבקר</a>
   <div class="drawer__foot">
-    <strong>EYAL HAKATZAV · 1985</strong>
+    <strong>EYAL · HAKATZAV</strong>
     <span>ששת הימים 50, הוד השרון</span>
     <span dir="ltr">054-679-4588</span>
   </div>
@@ -1323,97 +1467,73 @@
 
 <!-- ============== HERO ============== -->
 <section class="hero" aria-label="ברוכים הבאים">
-  <!-- Layered SVG background -->
-  <div class="hero__bg" aria-hidden="true">
-    <!-- Butcher chart silhouette layer 1 -->
-    <svg class="float float--1" viewBox="0 0 200 240" fill="none" stroke="currentColor" stroke-width=".6" data-parallax="-40">
-      <g style="color: rgba(226,194,119,.5)">
-        <!-- abstract cow outline -->
-        <path d="M30 80 Q40 40 90 40 L130 40 Q160 30 175 60 Q190 70 185 95 L180 120 L195 130 L185 155 L165 160 L160 195 L140 200 L135 215 L120 215 L120 198 L80 198 L80 215 L65 215 L60 200 L40 195 L35 160 L25 150 L25 120 L18 110 L25 95 Z" />
-        <path d="M60 80 L60 195 M90 80 L90 195 M120 80 L120 195 M150 80 L150 195" stroke-dasharray="2 4"/>
-        <text x="68" y="105" font-family="Bellefair" font-size="9">CHUCK</text>
-        <text x="98" y="125" font-family="Bellefair" font-size="9">RIB</text>
-        <text x="125" y="135" font-family="Bellefair" font-size="9">LOIN</text>
-        <text x="155" y="125" font-family="Bellefair" font-size="9">ROUND</text>
-      </g>
-    </svg>
-
-    <!-- Cleaver -->
-    <svg class="float float--2" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1" data-parallax="60">
-      <g style="color: rgba(243,231,208,.45)">
-        <rect x="20" y="30" width="120" height="80" rx="4" />
-        <circle cx="40" cy="50" r="3" />
-        <rect x="135" y="55" width="50" height="30" rx="3" />
-        <line x1="20" y1="40" x2="140" y2="40" />
-        <line x1="20" y1="100" x2="140" y2="100" />
-      </g>
-    </svg>
-
-    <!-- Stamp -->
-    <svg class="float float--3" viewBox="0 0 100 100" fill="none" data-parallax="-20">
-      <g style="color: rgba(192,65,28,.7); transform: rotate(-15deg); transform-origin: 50% 50%;">
-        <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width=".8"/>
-        <text x="50" y="45" text-anchor="middle" fill="currentColor" font-family="Frank Ruhl Libre" font-size="14" font-weight="800">PRIME</text>
-        <text x="50" y="62" text-anchor="middle" fill="currentColor" font-family="Bellefair" font-size="6" letter-spacing="1">EST · 1985</text>
-        <path d="M20 70 L80 70" stroke="currentColor" stroke-width=".5"/>
-      </g>
-    </svg>
-  </div>
+  <div class="hero__bg" aria-hidden="true"></div>
 
   <div class="hero__inner">
 
-    <div class="hero__top reveal">
+    <div class="hero__meta reveal">
       <span class="pill">
         <span class="pill__dot" aria-hidden="true"></span>
-        פתוחים עכשיו · הבשר הטרי של היום
+        החנות פתוחה · בשר טרי של היום
       </span>
-      <span class="hero__loc">EST · 1985 · HOD HASHARON</span>
+      <span class="hero__index">
+        <span>NO. <b>01</b></span>
+        <span>HOD HASHARON · IL</span>
+      </span>
     </div>
 
-    <div class="hero__center">
-      <h1 class="hero__title" aria-label="אהבה לבשר">
-        <span class="word word--1"><span>אהבה</span></span>
-        <br/>
-        <span class="word word--2"><span class="stroke">ל</span></span><span class="word word--3"><span>בשר</span></span>
-      </h1>
-      <p class="hero__sub">
-        קצביית בוטיק בלב הוד השרון. שלושה דורות של ידיים שיודעות בשר —
-        <strong style="color:var(--gold-2);font-weight:500;">סכין חדה, חיתוך מדויק, וכבוד עמוק לחומר.</strong>
+    <h1 class="hero__title" aria-label="אייל הקצב. אהבה אמיתית לבשר.">
+      <span class="row row--1"><span>אייל הקצב.</span></span>
+      <span class="row row--2"><span>אהבה אמיתית</span></span>
+      <span class="row row--3"><span>לבשר.</span></span>
+    </h1>
+
+    <div class="hero__photo reveal delay-1">
+      <div class="hero__photo-frame">
+        <img class="hero__photo-img" src="butcher.jpg" alt="אייל אלוני, בעל קצביית אייל הקצב, מחזיק נתח בשר" />
+        <div class="hero__photo-tag">
+          <div>
+            <b>אייל אלוני</b>
+            הקצב · בעלים
+          </div>
+          <div class="right">
+            ↳ הוד השרון
+          </div>
+        </div>
+      </div>
+      <div class="hero__stamp" aria-hidden="true">
+        <div>
+          <b>100%</b>
+          <span>טרי · יומי</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__foot">
+      <p class="hero__lede" style="grid-column: 1 / -1; margin-block-end: 16px;">
+        קצביית בוטיק בלב הוד השרון. <strong>אנחנו בוחרים את הספקים, חותכים מולכם, ולא מוציאים סחורה שלא היינו אוכלים בעצמנו.</strong> זה כל הסיפור.
       </p>
-      <div class="hero__ctas">
+      <div class="hero__ctas" style="grid-column: 1 / -1; margin: 0 0 28px;">
         <a class="btn btn--primary" href="https://wa.me/972546794588" target="_blank" rel="noopener">
-          להזמנה מיידית
+          להזמנה בוואטסאפ
           <svg class="arrow" width="18" height="14" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 L23 9 L16 16 M23 9 L1 9"/></svg>
         </a>
         <a class="btn btn--ghost" href="#cuts">
-          לתפריט הנתחים
+          לראות מה יש היום
           <svg class="arrow" width="18" height="14" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 L23 9 L16 16 M23 9 L1 9"/></svg>
         </a>
       </div>
-    </div>
-
-    <div class="hero__bottom reveal delay-2">
-      <div class="hero__stats">
-        <div>
-          <strong>40+</strong>
-          <span>שנים על הבלוק</span>
-        </div>
-        <div>
-          <strong>180</strong>
-          <span>נתחים זמינים</span>
-        </div>
-        <div>
-          <strong>0</strong>
-          <span>פשרות באיכות</span>
-        </div>
+      <div>
+        <strong>טרי</strong>
+        <span>מהמשק לחנות, באותו השבוע</span>
       </div>
-      <div class="hero__scroll" aria-hidden="true">
-        <span class="latin" style="font-size:10px;letter-spacing:.3em;color:var(--gold)">SCROLL</span>
-        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="1" y="1" width="12" height="20" rx="6"/>
-          <line x1="7" y1="6" x2="7" y2="11"/>
-        </svg>
+      <div>
+        <strong><em>אישי</em></strong>
+        <span>חיתוך לפי איך שתבשלו</span>
+      </div>
+      <div>
+        <strong>שלנו</strong>
+        <span>בלי תיווך, בלי קיצורי דרך</span>
       </div>
     </div>
 
@@ -1466,71 +1586,38 @@
 <section class="section about" id="about" aria-labelledby="about-h">
   <div class="wrap">
     <header class="section__head reveal">
-      <span class="eyebrow">001 · הסיפור שלנו</span>
-      <h2 class="section__title" id="about-h">לא קצביה. <em>בית מלאכה.</em></h2>
+      <span class="eyebrow">01 / הסיפור</span>
+      <h2 class="section__title" id="about-h">ברוכים הבאים <em>הביתה.</em></h2>
       <p class="section__lead">
-        אצל אייל לא נכנסים סתם לקנות בשר. נכנסים לדבר, לטעום, לשאול. כל נתח עובר תחת היד —
-        בלי שורטקטים, בלי קומפרומיסים, רק בשר אמיתי שיודע מאיפה הוא בא.
+        נעים להכיר — שמי אייל אלוני. קצב, יזם, ודור רביעי בהוד השרון.
       </p>
     </header>
 
     <div class="about__grid">
       <div class="about__text">
         <p class="reveal">
-          הכל התחיל בחנות קטנה ברחוב צדדי. אבא של אייל שחט, סיכך ולימד —
-          ואייל גדל בין הקצבים, עם ריח מלח ועצים שרופים על הידיים. <strong>היום, ארבעים שנה אחר כך,</strong>
-          זה אותו בלוק עץ, אותו מבט מקצועי, אבל עם תהליך מודרני שמכבד את החומר כמו פעם.
+          נולדתי ב־1997, גדלתי והתחנכתי בהוד השרון על ערכים של <strong>עבודה קשה, שירות מכל הלב,
+          ואהבה אמיתית למקום שבו גדלתי.</strong>
         </p>
         <p class="reveal delay-1">
-          אנחנו בוחרים בקפידה כל ספק, מבקרים את העדרים, מבקשים נתחים שלמים ולא חתוכים מראש.
-          זה סיפור של שליטה — מההגעה למשטח, דרך ההשרייה, ועד שהנתח עוטף בנייר מסביב לאצבע
-          הלקוח שאומר תודה.
+          המקום הזה הוא הרבה יותר מקצבייה עבורי. לפני כחמישים שנה פעלה כאן מכולת קטנה —
+          <strong>המכולת של סבא שלי ז״ל</strong>, שהיה ממייסדי הוד השרון עוד מתקופת המעברות.
+          היום אני זוכה להמשיך את דרכו, באותו המקום, עם אותו הלב ועם אותה התשוקה שהיתה לו.
+        </p>
+        <p class="reveal delay-1">
+          כאן תמצאו תפריט מגוון, נתחי בשר מובחרים שנבחרו בקפידה, ואווירה חמימה —
+          שמחזירה אותנו לתקופה שבה הכל היה פשוט, אמיתי וטעים.
         </p>
         <blockquote class="quote reveal delay-2">
-          הבשר הוא לא מוצר. הוא דיאלוג בין מי שגידל, מי שחתך, ומי שמבשל. תפקידי לוודא שאף אחד מהקולות לא ייעלם.
-          <cite>— אייל אלוני, בעלים</cite>
+          אז ברוכים הבאים הביתה — למשפחה, למסורת, ולאהבה לבשר.
+          <cite>— שלכם, אייל הקצב</cite>
         </blockquote>
       </div>
 
-      <!-- Vintage butcher chart card -->
-      <aside class="chart reveal delay-3" aria-label="תרשים נתחים">
-        <div class="chart__head">
-          <h4>תרשים החנות</h4>
-          <small>ANATOMY · CHART</small>
-        </div>
+      <!-- Cuts diagram card -->
+      <aside class="chart reveal delay-3" aria-label="תרשים נתחי הבקר">
         <div class="chart__diagram">
-          <svg viewBox="0 0 280 320" fill="none" stroke="currentColor" stroke-width="1.4">
-            <g style="color:#1a120e">
-              <!-- stylized cow chart -->
-              <path d="M40 90 Q60 40 130 40 L195 40 Q235 30 250 70 Q265 80 258 110 L250 145 L268 158 L255 195 L228 200 L220 250 L195 260 L188 290 L165 290 L165 268 L100 268 L100 290 L78 290 L70 270 L42 260 L36 200 L22 188 L22 145 L12 130 L22 105 Z"/>
-              <path d="M75 90 L75 268 M115 75 L115 268 M165 60 L165 268 M215 75 L215 268" stroke-dasharray="3 5" stroke-width=".9"/>
-              <!-- numbered cuts -->
-              <g font-family="Frank Ruhl Libre" font-weight="800" font-size="14" fill="currentColor" stroke="none">
-                <text x="50" y="120">צוואר</text>
-                <text x="84" y="135">כתף</text>
-                <text x="125" y="155">צלעות</text>
-                <text x="172" y="170">סינטה</text>
-                <text x="220" y="160">ירך</text>
-                <text x="105" y="225">חזה</text>
-                <text x="155" y="245">בטן</text>
-              </g>
-              <g font-family="Bellefair" font-size="9" fill="#7a1010" stroke="none">
-                <text x="50" y="135">01</text>
-                <text x="86" y="150">02</text>
-                <text x="125" y="170">03</text>
-                <text x="172" y="185">04</text>
-                <text x="220" y="175">05</text>
-              </g>
-            </g>
-          </svg>
-        </div>
-        <div class="chart__stamp" aria-hidden="true">
-          <span><strong>40</strong>YEARS<br/>EST 1985</span>
-        </div>
-        <div class="chart__foot">
-          <span>EYAL · HAKATZAV</span>
-          <span>HOD HASHARON</span>
-          <span>VOL · 01</span>
+          <img src="cowParts.jpg" alt="תרשים נתחי הבקר — חזה, צלעות, סינטה, פילה, ירך, כתף, צוואר" />
         </div>
       </aside>
 
@@ -1543,12 +1630,12 @@
   <div class="wrap">
     <header class="cuts__head reveal">
       <div>
-        <span class="eyebrow">002 · הנתחים</span>
-        <h2 class="section__title" id="cuts-h">המבחר שלנו, <em>היום בחנות.</em></h2>
+        <span class="eyebrow">02 / מה יש היום</span>
+        <h2 class="section__title" id="cuts-h">הוויטרינה. <em>נכון לעכשיו.</em></h2>
       </div>
       <p class="section__lead">
-        כל פריט נחתך לפי הזמנה. ספרו לנו איך אתם מתכננים לבשל ונתאים את הנתח —
-        סטייק עבה, צלי שלם, או בייגלך ארוז יפה לסטיר־פריי.
+        אין קטלוג. יש מה שיש. תגידו לנו על איזו אש אתם הולכים, וכמה אנשים ליד השולחן —
+        אנחנו נחתוך לכם בדיוק את העובי הנכון. לא ארוז מראש, לא מהיום הקודם.
       </p>
     </header>
 
@@ -1573,14 +1660,14 @@
           </svg>
         </div>
         <div class="cut__body">
-          <span class="cut__num">CUT 01</span>
-          <h3 class="cut__name">אנטריקוט מיושן</h3>
-          <p class="cut__desc">21 יום של יישון יבש על העצם. שיש מושלם, טעם עמוק. לסטייק על האש.</p>
+          <span class="cut__num">№ 01</span>
+          <h3 class="cut__name">אנטריקוט מיושן 21</h3>
+          <p class="cut__desc">יישון יבש על העצם, 21 יום. שיש שמח, טעם עמוק. בנוי לאש פתוחה.</p>
         </div>
       </article>
 
       <article class="cut reveal delay-1">
-        <span class="cut__tag">חדש</span>
+        <span class="cut__tag">חדש השבוע</span>
         <div class="cut__art" aria-hidden="true">
           <!-- filet -->
           <svg viewBox="0 0 200 200">
@@ -1596,9 +1683,9 @@
           </svg>
         </div>
         <div class="cut__body">
-          <span class="cut__num">CUT 02</span>
-          <h3 class="cut__name">פילה בקר</h3>
-          <p class="cut__desc">הנתח הרך ביותר. מנקים בעצמנו, חוצים לפי בקשה. למסעדה ביתית של פעם.</p>
+          <span class="cut__num">№ 02</span>
+          <h3 class="cut__name">פילה בקר נקי</h3>
+          <p class="cut__desc">הרך מכולם. מנקים אצלנו ביד, חוצים לאיך שאתם רוצים להגיש.</p>
         </div>
       </article>
 
@@ -1619,14 +1706,14 @@
           </svg>
         </div>
         <div class="cut__body">
-          <span class="cut__num">CUT 03</span>
+          <span class="cut__num">№ 03</span>
           <h3 class="cut__name">טי־בון על העצם</h3>
-          <p class="cut__desc">סטייק וסינטה על אותה עצם. שני עולמות במנה אחת — דרמה על הגריל.</p>
+          <p class="cut__desc">פילה וסינטה על אותה עצם. שני נתחים, מנה אחת. דרמה לגריל.</p>
         </div>
       </article>
 
       <article class="cut reveal">
-        <span class="cut__tag">מומלץ</span>
+        <span class="cut__tag">בחירת אייל</span>
         <div class="cut__art" aria-hidden="true">
           <!-- lamb chops -->
           <svg viewBox="0 0 200 200">
@@ -1643,9 +1730,9 @@
           </svg>
         </div>
         <div class="cut__body">
-          <span class="cut__num">CUT 04</span>
-          <h3 class="cut__name">צלעות טלה</h3>
-          <p class="cut__desc">כתף טלה צעיר, ניקוי צרפתי קלאסי. מעודנות, ריחנית, חגיגית.</p>
+          <span class="cut__num">№ 04</span>
+          <h3 class="cut__name">צלעות טלה צרפתי</h3>
+          <p class="cut__desc">טלה צעיר, ניקוי בסכין צרפתית. עדינות, ריח שמרגישים מהדלת.</p>
         </div>
       </article>
 
@@ -1666,14 +1753,14 @@
           </svg>
         </div>
         <div class="cut__body">
-          <span class="cut__num">CUT 05</span>
-          <h3 class="cut__name">עוף חופש טרי</h3>
-          <p class="cut__desc">מהמשק לחנות תוך 24 שעות. שלם, מנוקה, או חתוך לפי דרישה.</p>
+          <span class="cut__num">№ 05</span>
+          <h3 class="cut__name">עוף חופש מקומי</h3>
+          <p class="cut__desc">מהמשק שלנו בצפון, תוך 24 שעות. שלם, מנוקה, או חתוך כמו שתבקשו.</p>
         </div>
       </article>
 
       <article class="cut reveal delay-2">
-        <span class="cut__tag cut__tag--gold">בוטיק</span>
+        <span class="cut__tag cut__tag--gold">בית</span>
         <div class="cut__art" aria-hidden="true">
           <!-- sausage / kebab -->
           <svg viewBox="0 0 200 200">
@@ -1693,9 +1780,9 @@
           </svg>
         </div>
         <div class="cut__body">
-          <span class="cut__num">CUT 06</span>
-          <h3 class="cut__name">קבב הבית</h3>
-          <p class="cut__desc">תערובת סודית, טחון פעמיים, תיבול ידני. בלי חומרי שימור — רק בשר ויד.</p>
+          <span class="cut__num">№ 06</span>
+          <h3 class="cut__name">קבב הבית של אייל</h3>
+          <p class="cut__desc">טחינה כפולה, תיבול ידני, תערובת שאמא לימדה. אפס חומרי שימור.</p>
         </div>
       </article>
 
@@ -1707,10 +1794,10 @@
 <section class="section process" id="process" aria-labelledby="process-h">
   <div class="wrap">
     <header class="section__head reveal">
-      <span class="eyebrow" style="color:var(--blood)">003 · התהליך</span>
-      <h2 class="section__title" id="process-h">מהשטח <em>אל הצלחת.</em></h2>
+      <span class="eyebrow">03 / איך זה עובד</span>
+      <h2 class="section__title" id="process-h">ארבעה שלבים. <em>אפס תירוצים.</em></h2>
       <p class="section__lead">
-        ארבעה צעדים, אפס פשרות. ככה נתח מגיע אליכם הביתה — לא רק במכירה, אלא במחשבה.
+        ככה נתח מגיע מהמשק עד למחבת שלכם — בלי קסמים, בלי לקצר.
       </p>
     </header>
 
@@ -1719,32 +1806,32 @@
       <article class="step reveal">
         <span class="step__num">01</span>
         <div class="step__body">
-          <h3>מקור ידוע, ספק מוכר</h3>
-          <p>אנחנו עובדים עם משקים שבחרנו אישית — מבקרים, שואלים, ובודקים שהבעלי חיים גדלים נכון. אם לא נסכים על איכות, לא נסכים על עסקה.</p>
+          <h3>בוחרים את הספקים, אישית</h3>
+          <p>נוסעים, רואים, מדברים עם המגדלים. בדיקה ידנית של כל משלוח לפני שהוא בכלל נכנס למקרר. אם לא הייתי קונה לעצמי — לא קונה לכם.</p>
         </div>
       </article>
 
       <article class="step reveal">
         <span class="step__num">02</span>
         <div class="step__body">
-          <h3>יישון בשליטה</h3>
-          <p>חדר יישון בטמפרטורה ולחות מדויקות. נתחים נבחרים מחכים בין 14 ל־45 ימים — מפתחים טעם, מאבדים מים, נכנסים למיטבם.</p>
+          <h3>מיישנים את הנתחים הנכונים</h3>
+          <p>חדר יישון יבש בטמפרטורה ולחות נשלטות. נתחים נבחרים מחכים 14 עד 45 ימים — צוברים אופי, מאבדים מים, מתכוננים לסכין.</p>
         </div>
       </article>
 
       <article class="step reveal">
         <span class="step__num">03</span>
         <div class="step__body">
-          <h3>חיתוך אישי, על בלוק</h3>
-          <p>אין אריזה מוקדמת. אתם בוחרים, אנחנו חותכים מולכם — לעובי שביקשתם, לפי הזמנה. כי אנטריקוט לסטייק הוא לא אנטריקוט לצלי.</p>
+          <h3>חותכים מולכם, על הקרש</h3>
+          <p>אין מגשים, אין אריזות יד שנייה. אתם מחליטים על העובי, אנחנו מחליטים על הזווית. אנטריקוט לסטייק זה לא אותו אנטריקוט לצלי איטי.</p>
         </div>
       </article>
 
       <article class="step reveal">
         <span class="step__num">04</span>
         <div class="step__body">
-          <h3>אריזה ומשלוח קר</h3>
-          <p>נייר קצבים אקולוגי, ארגז קר עם קרח יבש, משלוח עד הדלת בהוד השרון והסביבה. הבשר מגיע אליכם בטמפרטורת חנות, מוכן למקרר או למקפיא.</p>
+          <h3>אורזים ושולחים קר</h3>
+          <p>נייר קצבים, קופסה קרה, קרח יבש כשצריך. משלוח עד הדלת בהוד השרון והסביבה — הבשר מגיע בטמפרטורה של החנות, ישר למקרר.</p>
         </div>
       </article>
 
@@ -1756,8 +1843,8 @@
 <section class="section why" id="why" aria-labelledby="why-h">
   <div class="wrap">
     <header class="section__head reveal">
-      <span class="eyebrow">004 · למה אנחנו</span>
-      <h2 class="section__title" id="why-h">ארבעה דברים <em>שלא מתפשרים.</em></h2>
+      <span class="eyebrow">04 / למה כדאי</span>
+      <h2 class="section__title" id="why-h">ארבע סיבות. <em>בלי שיווק.</em></h2>
     </header>
 
     <div class="why__grid">
@@ -1766,32 +1853,32 @@
         <div class="feat__icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L13 7 L18 7 L14 11 L16 17 L12 13 L8 17 L10 11 L6 7 L11 7 Z"/></svg>
         </div>
-        <h4>איכות בוטיק</h4>
-        <p>נתחים נבחרים אישית, בקרה הדוקה, יחס שלא תקבלו ברשת.</p>
+        <h4>בלי תיווך</h4>
+        <p>אנחנו עובדים ישר מול המגדלים. בלי סוכן, בלי מתווך, בלי אחוזים מיותרים.</p>
       </article>
 
       <article class="feat reveal delay-1">
         <div class="feat__icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7 V12 L15 14"/></svg>
         </div>
-        <h4>טריות יומית</h4>
-        <p>מה שיש בחנות הגיע השבוע. בלי שכחות במקפיא, בלי הפתעות.</p>
+        <h4>טרי כל יום</h4>
+        <p>מה שיש בוויטרינה הגיע השבוע. בלי הקפאות, בלי הפתעות במקפיא.</p>
       </article>
 
       <article class="feat reveal delay-2">
         <div class="feat__icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 L8 7 L13 12 L8 17 Z"/><path d="M11 12 L21 12 M16 7 L21 12 L16 17"/></svg>
         </div>
-        <h4>חיתוך לפי בקשה</h4>
-        <p>עובי שאתם רוצים, צורה שאתם צריכים. בלי גוזרי קופסה, רק קצב.</p>
+        <h4>חיתוך מדויק</h4>
+        <p>תגידו על איזה גריל ולכמה אנשים — נחתוך לעובי הנכון. עוד שלוש דקות, שווה.</p>
       </article>
 
       <article class="feat reveal delay-3">
         <div class="feat__icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12 V8 a2 2 0 0 0 -2 -2 H6 a2 2 0 0 0 -2 2 V12"/><path d="M2 12 H22 V18 a2 2 0 0 1 -2 2 H4 a2 2 0 0 1 -2 -2 Z"/><path d="M12 6 V2"/></svg>
         </div>
-        <h4>משלוח עד הדלת</h4>
-        <p>הזמנה עד 12:00 — מגיע באותו היום בקירור מבוקר, אריזה אטומה.</p>
+        <h4>משלוח עד הבית</h4>
+        <p>הזמנה עד 12:00 — מגיע אותו היום בקירור מלא, ארוז ומסומן.</p>
       </article>
 
     </div>
@@ -1802,15 +1889,15 @@
 <section class="section testify" aria-labelledby="testify-h">
   <div class="wrap">
     <header class="testify__head section__head reveal" style="margin-inline: auto; text-align:center;">
-      <span class="eyebrow">005 · לקוחות</span>
-      <h2 class="section__title" id="testify-h">אומרים עלינו <em>טוב.</em></h2>
+      <span class="eyebrow">05 / מהשולחן</span>
+      <h2 class="section__title" id="testify-h">לא אנחנו אומרים. <em>הם אומרים.</em></h2>
     </header>
 
     <div class="testify__rail">
 
       <article class="testimonial reveal">
         <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
-        <p class="testimonial__text">אצל אייל מבינים בשר. לקחתי אנטריקוט מיושן ליום הולדת — הבן שלי שהוא טבח אמר שזה הסטייק הכי טוב שהוא אכל בחיים.</p>
+        <p class="testimonial__text">לקחתי ממנו אנטריקוט מיושן ליום הולדת. הבן שלי, טבח במסעדה, אמר לי שזה הסטייק הכי טוב שהוא אכל. הוא לא מחמיא לי בדרך כלל.</p>
         <div class="testimonial__by">
           <div class="testimonial__avatar" aria-hidden="true">ר</div>
           <div>
@@ -1822,7 +1909,7 @@
 
       <article class="testimonial reveal delay-1">
         <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
-        <p class="testimonial__text">השירות פה הוא מסיבה. אייל יוצא מאחורי הדלפק, שואל מה אנחנו מכינים, ממליץ נתח מתאים. נתחיתי לחזור.</p>
+        <p class="testimonial__text">אייל יוצא מאחורי הדלפק, שואל מה אני מבשלת, ממליץ על נתח אחר ממה שתכננתי. יצאתי עם משהו יותר טעים ופחות יקר. ככה זה אצלו.</p>
         <div class="testimonial__by">
           <div class="testimonial__avatar" aria-hidden="true">ש</div>
           <div>
@@ -1834,7 +1921,7 @@
 
       <article class="testimonial reveal delay-2">
         <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
-        <p class="testimonial__text">קבב הבית של אייל זה משהו אחר. מזמין כל שישי כבר שנתיים. טריות, ריחות, ויחס — כמו פעם.</p>
+        <p class="testimonial__text">הקבב של אייל זה משהו אחר. שנתיים של שישי שמתחיל בוואטסאפ אליו. אף פעם לא הייתה אכזבה. זה כבר מסורת בבית.</p>
         <div class="testimonial__by">
           <div class="testimonial__avatar" aria-hidden="true">י</div>
           <div>
@@ -1852,17 +1939,17 @@
 <section class="section visit" id="visit" aria-labelledby="visit-h">
   <div class="wrap">
     <header class="section__head reveal">
-      <span class="eyebrow">006 · בקרו אותנו</span>
-      <h2 class="section__title" id="visit-h">החנות פתוחה. <em>בואו לבחור.</em></h2>
+      <span class="eyebrow">06 / בואו לבקר</span>
+      <h2 class="section__title" id="visit-h">הדלת פתוחה. <em>תיכנסו.</em></h2>
       <p class="section__lead">
-        ריח של תיבול, ויטרינה מלאה, סכין שמלוטשת ברגע. אם אתם בסביבה — קפצו, יש לנו טעם להציע.
+        ויטרינה מלאה, סכין מלוטשת, ויחס אישי שלא תקבלו ברשת. תיכנסו לבחור עם העיניים, לבקש המלצה, או רק להגיד שלום.
       </p>
     </header>
 
     <div class="visit__grid">
 
       <div class="visit__card reveal">
-        <h3>הקואורדינטות שלנו</h3>
+        <h3>איפה למצוא אותנו</h3>
         <div class="visit__rows">
 
           <div class="visit__row">
@@ -1935,23 +2022,23 @@
     <div class="footer__grid">
       <div>
         <h5>EYAL · HAKATZAV</h5>
-        <p class="footer__about">קצביית בוטיק בלב הוד השרון. אהבה לבשר, מאז 1985.</p>
+        <p class="footer__about">קצביית בוטיק.<br/>בשר אמיתי, ידיים אמיתיות.<br/>הוד השרון.</p>
       </div>
       <div>
-        <h5>NAVIGATION</h5>
+        <h5>NAVIGATE</h5>
         <ul>
-          <li><a href="#about">הסיפור</a></li>
-          <li><a href="#cuts">הנתחים</a></li>
-          <li><a href="#process">התהליך</a></li>
-          <li><a href="#visit">בקרו אותנו</a></li>
+          <li><a href="#about">מי אנחנו</a></li>
+          <li><a href="#cuts">מה יש היום</a></li>
+          <li><a href="#process">איך זה עובד</a></li>
+          <li><a href="#visit">בואו לבקר</a></li>
         </ul>
       </div>
       <div>
         <h5>CONTACT</h5>
         <ul>
           <li><a href="tel:+972546794588" dir="ltr">054-679-4588</a></li>
-          <li><a href="https://wa.me/972546794588" target="_blank" rel="noopener">WhatsApp להזמנות</a></li>
-          <li><a href="https://www.instagram.com/eyal_aloni/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://wa.me/972546794588" target="_blank" rel="noopener">וואטסאפ להזמנות</a></li>
+          <li><a href="https://www.instagram.com/eyal_aloni/" target="_blank" rel="noopener">@eyal_aloni</a></li>
           <li>ששת הימים 50, הוד השרון</li>
         </ul>
       </div>
@@ -1983,7 +2070,7 @@
   </span>
   <span class="wa__label">
     דברו איתנו
-    <small>WhatsApp · מענה מהיר</small>
+    <small>וואטסאפ · מענה מהיר</small>
   </span>
 </a>
 
